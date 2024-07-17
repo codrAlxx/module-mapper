@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch, Routes } from 'react-router-dom
 import TreeDiag from './TreeDiag';
 import MermaidComp from './MermaidComp';
 import Button from './ButtonComp'
-
+import Loader from './Loader'
 
 
   

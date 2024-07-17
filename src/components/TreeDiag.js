@@ -9,7 +9,6 @@ import './TreeDiag.scss';
 import { IconName } from "react-icons/ai";
 import { AiOutlineZoomIn, AiOutlineZoomOut } from "react-icons/ai";
 
-
 // Data examples
 import mapJson from '../examples/org-chart.json';
 
@@ -302,13 +301,16 @@ class TreeDiag extends Component {
                                 <div className='button-combo'>
                 <div className="btn btn__primary btn_tree"                   onClick={() => this.setPathFunc('diagonal')}
                 ><p>{'Diagnol'}</p></div>
-                <div className="btn btn__primary btn_tree"><p>{'Elbow'}</p></div>
+                <div className="btn btn__primary btn_tree"                   onClick={() => this.setPathFunc('elbow')}
+                ><p>{'Elbow'}</p></div>
                 </div>
 
                                 
                                 <div className='button-combo'>
-                <div className="btn btn__primary btn_tree"><p>{'Horizontal'}</p></div>
-                <div className="btn btn__primary btn_tree"><p>{'Vertical'}</p></div>
+                <div className="btn btn__primary btn_tree"                   onClick={() => this.setPathFunc('straight')}
+                ><p>{'Stright'}</p></div>
+                <div className="btn btn__primary btn_tree"                   onClick={() => this.setPathFunc('step')}
+                ><p>{'Step'}</p></div>
                 </div>
               </div>
 
@@ -325,6 +327,7 @@ class TreeDiag extends Component {
                 </div>
               </div>
 
+              <div style={{display: 'flex'}}>
               <div className="prop-container ">
                 <h4 className="prop">Collapsible</h4>
                 <Switch
@@ -342,7 +345,9 @@ class TreeDiag extends Component {
                   onChange={this.toggleZoomable}
                 />
               </div>
+              </div>
 
+              <div style={{display: 'flex'}}>
               <div className="prop-container">
                 <h4 className="prop">
                   Center Nodes on Click
@@ -363,6 +368,7 @@ class TreeDiag extends Component {
                 />
               </div>
             </div>
+              </div>
           </div>
           <div className="column-right">
             <div className="tree-stats-container">
