@@ -286,8 +286,12 @@ class TreeDiag extends Component {
                 <h4 className="prop">Orientation</h4>
                 
                 <div className='button-combo'>
-                <div className="btn btn__primary btn_tree"><p>{'Horizontal'}</p></div>
-                <div className="btn btn__primary btn_tree"><p>{'Vertical'}</p></div>
+                <div className="btn btn__primary btn_tree" 
+                                  onClick={() => this.setOrientation('horizontal')}
+                ><p>{'Horizontal'}</p></div>
+                <div className="btn btn__primary btn_tree"
+                                  onClick={() => this.setOrientation('vertical')}
+                ><p>{'Vertical'}</p></div>
                 </div>
               </div>
               
@@ -296,7 +300,8 @@ class TreeDiag extends Component {
                 <h4 className="prop">Path style</h4>
 
                                 <div className='button-combo'>
-                <div className="btn btn__primary btn_tree"><p>{'Diagnol'}</p></div>
+                <div className="btn btn__primary btn_tree"                   onClick={() => this.setPathFunc('diagonal')}
+                ><p>{'Diagnol'}</p></div>
                 <div className="btn btn__primary btn_tree"><p>{'Elbow'}</p></div>
                 </div>
 

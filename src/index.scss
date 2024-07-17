@@ -91,7 +91,7 @@ body {
     align-items: center;
 		width: 100%;
     height: 3rem;
-    box-shadow: $shadow;
+    // box-shadow: $shadow;
     background: rgba(255,255,255,0);
 		position: relative;
 		cursor: pointer;
@@ -143,7 +143,7 @@ body {
     display: flex;
     justify-content: center;
     label {
-    box-shadow: $shadow;
+    // box-shadow: $shadow;
 		cursor: pointer;
     position: relative;
     display: flex;
@@ -191,7 +191,7 @@ body {
       }
     }
     label {
-      box-shadow: $shadow;
+      // box-shadow: $shadow;
       position: relative;
       display: flex;
       justify-content: center;
@@ -237,7 +237,7 @@ body {
     background: var(--primary);
     box-shadow:inset .2rem .2rem 1rem var(--primary-light), 
               inset -.2rem -.2rem 1rem var(--primary-dark),
-              $shadow;
+              ;
     color: var(--greyLight-1);
 
     &:hover { color: var(--white); }
