@@ -1,21 +1,17 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import TreeDiag from './components/TreeDiag';
-import MermaidComp from './components/MermaidComp';
-import BaseComp from './components/BaseComp'
+import HomePage from './components/HomePage';
 
 
 const App = () => {
   return (
-    <BaseComp/>
-    // <TreeDiag/>
-    // <MermaidComp/>
-    // <Router>
-    //     <Routes>
-    //       <Route exact path="/" component={MermaidComp} />
-    //       <Route path="/tree" component={TreeDiag} />
-    //     </Routes>
-    // </Router>
+    <Router>
+        <Routes>
+          <Route exact path="/" element={<HomePage />} />
+          <Route path="/tree" element={<TreeDiag />} />
+        </Routes>
+    </Router>
   );
 };
 
