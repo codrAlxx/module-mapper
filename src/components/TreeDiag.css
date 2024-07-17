@@ -1,8 +1,8 @@
-#root,
-.App {
-  min-width:100%;
-  min-height: 100%;
+
+#reset-this-root {
+  all: unset;
 }
+
 
 .title {
   text-align: center;

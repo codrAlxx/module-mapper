@@ -45,11 +45,18 @@ html {
 html,
 body {
   min-height: 100vh;
-  display: flex;
+  // display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Poppins', sans-serif;
   background: var(--greyLight-1);
+}
+.top-input{
+ margin-top: 15%;
+ margin-left: 28%;
+}
+.preloader{
+  margin-left: 20%;
 }
 
 

@@ -2,6 +2,7 @@ import React from "react";
 import './HomePage.scss'
 import { IoSend } from "react-icons/io5";
 import Loader from './Loader'
+import { useNavigate } from 'react-router-dom';
 
 class HomePage extends React.Component {
 constructor(props){
@@ -95,7 +96,9 @@ handleButtonClick(){
     //     .catch(error => {
     //         this.setState({ isLoading: false });
     //         console.error("Error fetching data: ", error);
-    //     });
+    //     })
+
+    // navigate('/other-page');
 }
 
 render() {
@@ -104,8 +107,9 @@ render() {
     return (
         <div className="container-home">
 
+            <div className="top-input">
             {isLoading ? 
-                <Loader /> 
+                <Loader className="loader-top"/> 
                 : 
                 <div class="form">
                     <input type="text" className="form__input" placeholder="Enter Github Repo or File Path......"/> 
@@ -114,6 +118,7 @@ render() {
                     </div>
                 </div>
             }
+            </div>
 
             <div className="bb8" style={{WebkitTransform: `translateX(${droidX}px)`}}>
                 <div className={'antennas ' + (toTheRight ? 'right' : '')}

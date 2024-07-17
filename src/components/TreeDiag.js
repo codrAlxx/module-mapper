@@ -278,7 +278,7 @@ class TreeDiag extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="reset-this">
         <div className="demo-container">
           <div className="column-left">
             <div className="controls-container">
