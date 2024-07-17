@@ -1,0 +1,22 @@
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css);
+
+.merm {
+  font-family: sans-serif;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+body {
+  background: #fff;
+}
+
+code {
+  font-family: "Fira Code", monospace;
+}
+
+@supports (font-variation-settings: normal) {
+  code {
+    font-family: "Fira Code VF", monospace;
+  }
+}
