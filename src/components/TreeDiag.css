@@ -21,8 +21,8 @@
   width: 20%;
   display: flex;
   flex-direction: column;
-  background: #f7fafc;
-  border-right: 1px solid #2d3748;
+  background: #424242;
+  border-right: 1px solid #fff;
 }
 
 .controls-container {
@@ -75,6 +75,7 @@
 .prop {
   font-weight: bold;
   display: block;
+  color: white;
 }
 
 .prop-large {
@@ -86,7 +87,7 @@
 
 .btn-controls {
   color: #f7fafc;
-  background-color: #2d3748;
+  background-color: #0066cc;
   transition: color 0.15s ease, border-color 0.15s ease;
 }
 .cardKey{
@@ -107,19 +108,22 @@
 
 /* Custom node classes */
 .demo-node > circle {
-  fill: #2d3748;
-  stroke: #2d3748;
+  fill: #ff67d3;
+  stroke: #fff;
+  stroke-width: 5px;
   z-index: -1 ;
 }
 circle{
-  fill: #800000;
-  stroke: #800000;
+  fill: #7278ff;
+  stroke: white;
+  stroke-width: 5px;
   z-index: -1;
   position: relative;
 }
 .rd3t-leaf-node{
-  fill: #800000;
-  stroke: #800000;
+  /* fill: #7278ff; */
+  /* stroke: white; */
+  stroke-width: 4px;
   position: relative;
 }
 /* Custom path classes */
