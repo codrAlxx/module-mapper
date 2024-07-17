@@ -5,7 +5,7 @@ import Switch from './Switch';
 import MixedNodeElement from './MixedNodeElement';
 import PureSvgNodeElement from './PureSvgNodeElement';
 import MixedNodeInputElement from './MixedNodeInputElement';
-import './TreeDiag.css';
+import './TreeDiag.scss';
 import { IconName } from "react-icons/ai";
 import { AiOutlineZoomIn, AiOutlineZoomOut } from "react-icons/ai";
 
@@ -284,83 +284,43 @@ class TreeDiag extends Component {
             <div className="controls-container">
               <div className="prop-container">
                 <h4 className="prop">Orientation</h4>
-                <button
-                  type="button"
-                  className="btn btn-controls btn-block"
-                  onClick={() => this.setOrientation('horizontal')}
-                >
-                  {'Horizontal'}
-                </button>
-                <button
-                  type="button"
-                  className="btn btn-controls btn-block"
-                  onClick={() => this.setOrientation('vertical')}
-                >
-                  {'Vertical'}
-                </button>
+                
+                <div className='button-combo'>
+                <div className="btn btn__primary btn_tree"><p>{'Horizontal'}</p></div>
+                <div className="btn btn__primary btn_tree"><p>{'Vertical'}</p></div>
+                </div>
               </div>
               
 
               <div className="prop-container">
                 <h4 className="prop">Path style</h4>
-                <button
-                  type="button"
-                  className="btn btn-controls btn-block"
-                  onClick={() => this.setPathFunc('diagonal')}
-                >
-                  {'Diagonal'}
-                </button>
-                <button
-                  type="button"
-                  className="btn btn-controls btn-block"
-                  onClick={() => this.setPathFunc('elbow')}
-                >
-                  {'Elbow'}
-                </button>
-                <button
-                  type="button"
-                  className="btn btn-controls btn-block"
-                  onClick={() => this.setPathFunc('straight')}
-                >
-                  {'Straight'}
-                </button>
-                <button
-                  type="button"
-                  className="btn btn-controls btn-block"
-                  onClick={() => this.setPathFunc('step')}
-                >
-                  {'Step'}
-                </button>
-              </div>
 
-              {/* <div className="prop-container">
-                <label className="prop" htmlFor="customNodeElement">
-                  Custom Node Element
-                </label>
-                <select className="form-control" onChange={this.handleCustomNodeFnChange}>
-                  {Object.entries(customNodeFnMapping).map(([key, { description }]) => (
-                    <option key={key} value={key}>
-                      {description}
-                    </option>
-                  ))}
-                </select>
-              </div> */}
+                                <div className='button-combo'>
+                <div className="btn btn__primary btn_tree"><p>{'Diagnol'}</p></div>
+                <div className="btn btn__primary btn_tree"><p>{'Elbow'}</p></div>
+                </div>
 
-
-                      {/* Zoom Floating Buttons */}
-              <div className='prop-container '>
-                <h4 className="prop">Adjust Zoom</h4>
-                <div className='zoom'>
-                <button className="btn btn-controls btn-block btn-zoom" onClick={this.handleZoomIn}> 
-                <AiOutlineZoomIn />
-                </button>
-                <button className="btn btn-controls btn-block" onClick={this.handleZoomOut}>
-                  <AiOutlineZoomOut />
-                </button>
+                                
+                                <div className='button-combo'>
+                <div className="btn btn__primary btn_tree"><p>{'Horizontal'}</p></div>
+                <div className="btn btn__primary btn_tree"><p>{'Vertical'}</p></div>
                 </div>
               </div>
 
-              <div className="prop-container">
+
+
+              <div className='prop-container '>
+                <h4 className="prop">Adjust Zoom</h4>
+                <div className='button-combo'>
+                <div className='button-combo'>
+                <div className="btn btn__primary btn_tree" onClick={this.handleZoomIn}><p><AiOutlineZoomIn /></p></div>
+                <div className="btn btn__primary btn_tree" onClick={this.handleZoomIn}><p><AiOutlineZoomOut /></p></div>
+                </div>
+
+                </div>
+              </div>
+
+              <div className="prop-container ">
                 <h4 className="prop">Collapsible</h4>
                 <Switch
                   name="collapsibleBtn"

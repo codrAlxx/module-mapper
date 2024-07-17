@@ -31,12 +31,13 @@
   flex-basis: 1;
   overflow-y: scroll;
 }
-.zoom{
+/* .zoom{
   display: flex;
 }
 .zoom> button{
   margin: 2%;
-}
+} */
+
 .nodeDataText{
   color: black;
   font-family: 'Times New Roman', Times, serif;
@@ -70,7 +71,10 @@
 
 .prop-container {
   padding: 2px 5px;
-  margin: 15px 10px;
+  margin: 5px 10px;
+}
+.button-combo{
+  display: flex;
 }
 .prop {
   font-weight: bold;
@@ -85,20 +89,20 @@
   padding: 5px;
 }
 
-.btn-controls {
+/* .btn-controls {
   color: #f7fafc;
   background-color: #0066cc;
   transition: color 0.15s ease, border-color 0.15s ease;
-}
+} */
 .cardKey{
   font-weight: 500;
 }  
-.btn-controls:hover,
-.btn-controls:focus,
-.btn-controls:active {
+/* .btn-controls:hover,
+.btn-controls:focus, */
+/* .btn-controls:active {
   color: white;
   border-color: #f7fafc;
-}
+} */
 
 .tree-stats-container {
   text-align: center;
@@ -146,4 +150,62 @@ circle{
 
 .wiggle {
   animation: wiggle 0.5s ease-in-out infinite;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .3s ease;
+  border-radius: 1rem;
+  box-shadow: .3rem .3rem .6rem var(--greyLight-2), -.2rem -.2rem .5rem var(--white);
+}
+
+/* Primary Button Specific Styling */
+.btn__primary {
+  background: var(--primary);
+  color: var(--greyLight-1);
+  width: 8rem;
+  height: 4.7rem;
+  box-shadow: inset .2rem .2rem 1rem var(--primary-light), 
+              inset -.2rem -.2rem 1rem var(--primary-dark),
+              .3rem .3rem .6rem var(--greyLight-2), 
+              -.2rem -.2rem .5rem var(--white);
+}
+
+.btn__primary:hover {
+  color: var(--white);
+}
+
+.btn__primary:active {
+  box-shadow: inset .2rem .2rem 1rem var(--primary-dark), 
+              inset -.2rem -.2rem 1rem var(--primary-light);
+}
+
+/* Text Styling Inside Buttons */
+.btn p {
+  font-size: 1.6rem;
+  margin: 0; /* Resetting margin to align text properly inside the button */
+}
+
+/* Additional Styling for Button Group */
+.button-combo {
+  display: flex;
+  justify-content: space-between; /* Adjust as per layout requirement */
+}
+
+.btn_tree {
+  margin-right: 1rem; /* Space between buttons */
+  height: 4rem; /* Matching height for all buttons */
+}
+
+.btn_tree:last-child {
+  margin-right: 0; /* Removing margin for the last button */
+}
+
+.btn_tree p {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
