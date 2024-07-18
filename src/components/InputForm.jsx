@@ -26,7 +26,7 @@ const handleButtonClick = () => {
     .catch(error => {
         setIsLoading(false);
         console.error("Error fetching data: ", error);
-        navigate('/tree'); 
+        navigate('/error'); 
     });
 };
 
