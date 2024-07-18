@@ -63,10 +63,10 @@ const MixedNodeElement = ({ nodeData = {}, triggerNodeToggle, foreignObjectProps
       {/* {isHovering} ?<text style={{color: "#444"}}>{nodeData.name}</text> : <text style={{color: "#444"}}></text> */}
 
     
-      <foreignObject  width={400} height={600} x={+40} y={-50}>
+      {/* <foreignObject  width={400} height={600} x={+40} y={-50}>
               {isHovering ? <CardComp nodeData={nodeData} />: <></>} 
               
-      </foreignObject>
+      </foreignObject> */}
 
       <foreignObject width={400} height={500} x={-100} y={20} >
             {/* <h6 style={{color: "#444", fontWeight: 500, fontSize:  "20px",display: "inline-block",width: "auto", backgroundColor: 'white' }}>{nodeData.name}</h6>               */}
