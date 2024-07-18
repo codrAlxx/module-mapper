@@ -412,7 +412,6 @@ File Path- {file.file_path}
 File Content-
 {rf"{file.file_content}"}
 """)
-            print(llm_output.content)
             print(llm_output.content.replace(r'\_', '_'))
             list_of_all_llm_outputs.append(llm_output.content.replace(r'\_', '_'))
             print(f"{len(list_of_all_llm_outputs) = }")
@@ -941,8 +940,13 @@ def generate_mermaid():
 
         for method in method_entites:
             if method['FilePath'] == cls['ClassParentFilePath'] and method['MethodClassName'] == cls['ClassName']:
-
-                meth_name, meth_params = method['MethodName'][:method['MethodName'].index('(')], method['MethodName'][method['MethodName'].index('('):]
+                if method['MethodName'].__contains__('('):
+                    meth_name, meth_params = method['MethodName'][:method['MethodName'].index('(')], method['MethodName'][method['MethodName'].index('('):]
+                else:
+                    meth_name, meth_params = method['MethodName'], '()'
+                
+                if meth_params[-1] != ')':
+                    meth_params += ')'
 
                 meth_params = meth_params.split(')')[0].split('.')[-1]
                 meth_name = meth_name.split(' ')[-1] + f'({meth_params})'
@@ -957,7 +961,7 @@ def generate_mermaid():
                     meth_name += f' {endpoint}'
 
                 mermaid_code += f'''
-                {cls['ClassName']} : {method['MethodName'].replace(':', '')} {endpoint if endpoint else ''}
+                {cls['ClassName']} : {method['MethodName'].replace(':', '')} {endpoint if (endpoint and endpoint.lower() != 'none' and endpoint.lower() != 'null') else ''}
                 '''
 
     already_invoked = {}
@@ -1019,7 +1023,7 @@ def generate_mermaid():
 
     with open(f'{dir_name}/graph.js', 'w') as f:
         f.write(f'export default `\n{mermaid_code}\n\n{model_mermaid_code}\n`')
-    
+
     with open(f'{dir_name}/graph.md', 'w') as f:
         f.write(f'```mermaid\n{mermaid_code}\n\n{model_mermaid_code}\n```'.replace(r'\`', '`'))
 
@@ -1124,7 +1128,7 @@ def read_directory(url):
     except Exception as e:
         print(f"Error in Gerating node representation using mermaid library: {e}")
 
-    return "Success"
+    return "SUCCESS"
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:

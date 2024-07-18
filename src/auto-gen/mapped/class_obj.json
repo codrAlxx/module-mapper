@@ -1,52 +1,260 @@
 [
 	{
-		"ClassParentFilePath" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/controller/MovieController.java",
-		"ClassName" : "MovieController",
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/BookingController.java",
+		"ClassName" : "BookingController",
 		"ClassExtendsName" : "None",
 		"ClassImplementsName" : "None"
 	},
 	{
-		"ClassParentFilePath" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/entity/Actor.java",
-		"ClassName" : "Actor",
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/CouponController.java",
+		"ClassName" : "CouponController",
 		"ClassExtendsName" : "None",
 		"ClassImplementsName" : "None"
 	},
 	{
-		"ClassParentFilePath" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/entity/Crew.java",
-		"ClassName" : "Crew",
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/EventController.java",
+		"ClassName" : "EventController",
 		"ClassExtendsName" : "None",
 		"ClassImplementsName" : "None"
 	},
 	{
-		"ClassParentFilePath" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/entity/Director.java",
-		"ClassName" : "Director",
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/EventTypeController.java",
+		"ClassName" : "EventTypeController",
 		"ClassExtendsName" : "None",
 		"ClassImplementsName" : "None"
 	},
 	{
-		"ClassParentFilePath" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/entity/Movie.java",
-		"ClassName" : "Movie",
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/HelloWorldController.java",
+		"ClassName" : "HelloWorldController",
 		"ClassExtendsName" : "None",
 		"ClassImplementsName" : "None"
 	},
 	{
-		"ClassParentFilePath" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/service/MovieService.java",
-		"ClassName" : "MovieService",
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/TheaterController.java",
+		"ClassName" : "TheaterController",
 		"ClassExtendsName" : "None",
 		"ClassImplementsName" : "None"
 	},
 	{
-		"ClassParentFilePath" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/service/impl/FizzBuzz.java",
-		"ClassName" : "FizzBuzz",
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/UserController.java",
+		"ClassName" : "UserController",
 		"ClassExtendsName" : "None",
 		"ClassImplementsName" : "None"
 	},
 	{
-		"ClassParentFilePath" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/service/impl/MovieServiceImpl.java",
-		"ClassName" : "MovieServiceImpl",
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/exception/GlobalExceptionHandler.java",
+		"ClassName" : "GlobalExceptionHandler",
+		"ClassExtendsName" : "None",
+		"ClassImplementsName" : "None"
+	},
+	{
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/model/Booking.java",
+		"ClassName" : "Booking",
+		"ClassExtendsName" : "None",
+		"ClassImplementsName" : "None"
+	},
+	{
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/model/BookingCancellation.java",
+		"ClassName" : "BookingCancellation",
+		"ClassExtendsName" : "None",
+		"ClassImplementsName" : "None"
+	},
+	{
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/model/Coupon.java",
+		"ClassName" : "Coupon",
+		"ClassExtendsName" : "None",
+		"ClassImplementsName" : "None"
+	},
+	{
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/model/Event.java",
+		"ClassName" : "Event",
+		"ClassExtendsName" : "None",
+		"ClassImplementsName" : "None"
+	},
+	{
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/model/EventType.java",
+		"ClassName" : "EventType",
+		"ClassExtendsName" : "None",
+		"ClassImplementsName" : "None"
+	},
+	{
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/model/Theater.java",
+		"ClassName" : "Theater",
+		"ClassExtendsName" : "None",
+		"ClassImplementsName" : "None"
+	},
+	{
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/model/User.java",
+		"ClassName" : "User",
+		"ClassExtendsName" : "None",
+		"ClassImplementsName" : "None"
+	},
+	{
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/repository/BookingCancellationRepository.java",
+		"ClassName" : "BookingCancellationRepository",
+		"ClassExtendsName" : "JpaRepository<BookingCancellation, Long>",
+		"ClassImplementsName" : "None"
+	},
+	{
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/repository/BookingRepository.java",
+		"ClassName" : "BookingRepository",
+		"ClassExtendsName" : "JpaRepository",
+		"ClassImplementsName" : "None"
+	},
+	{
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/repository/CouponRepository.java",
+		"ClassName" : "CouponRepository",
+		"ClassExtendsName" : "JpaRepository",
+		"ClassImplementsName" : "None"
+	},
+	{
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/repository/EventRepository.java",
+		"ClassName" : "EventRepository",
+		"ClassExtendsName" : "JpaRepository",
+		"ClassImplementsName" : "None"
+	},
+	{
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/repository/EventTypeRepository.java",
+		"ClassName" : "EventTypeRepository",
+		"ClassExtendsName" : "JpaRepository",
+		"ClassImplementsName" : "None"
+	},
+	{
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/repository/TheaterRepository.java",
+		"ClassName" : "TheaterRepository",
+		"ClassExtendsName" : "JpaRepository",
+		"ClassImplementsName" : "None"
+	},
+	{
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/repository/UserRepository.java",
+		"ClassName" : "UserRepository",
+		"ClassExtendsName" : "JpaRepository",
+		"ClassImplementsName" : "None"
+	},
+	{
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/scheduler/",
+		"ClassName" : "MyCouponScheduler",
+		"ClassExtendsName" : "None",
+		"ClassImplementsName" : "None"
+	},
+	{
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/security/JwtAuthenticationFilter.java",
+		"ClassName" : "JwtAuthenticationFilter",
+		"ClassExtendsName" : "OncePerRequestFilter",
+		"ClassImplementsName" : "None"
+	},
+	{
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/security/JwtService.java",
+		"ClassName" : "JwtService",
+		"ClassExtendsName" : "None",
+		"ClassImplementsName" : "None"
+	},
+	{
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/security/MyUserDetails.java",
+		"ClassName" : "MyUserDetails",
 		"ClassExtendsName" : "None",
 		"ClassImplementsName" : [
-			"MovieService"
+			"UserDetails"
+		]
+	},
+	{
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/security/SecurityConfiguration.java",
+		"ClassName" : "SecurityConfiguration",
+		"ClassExtendsName" : "None",
+		"ClassImplementsName" : "None"
+	},
+	{
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/security/UserDetailsServiceImpl.java",
+		"ClassName" : "UserDetailsServiceImpl",
+		"ClassExtendsName" : "None",
+		"ClassImplementsName" : [
+			"UserDetailsService"
+		]
+	},
+	{
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/CouponService.java",
+		"ClassName" : "CouponService",
+		"ClassExtendsName" : "None",
+		"ClassImplementsName" : [
+			"CouponService"
+		]
+	},
+	{
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/EventService.java",
+		"ClassName" : "EventService",
+		"ClassExtendsName" : "None",
+		"ClassImplementsName" : "None"
+	},
+	{
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/EventTypeService.java",
+		"ClassName" : "EventTypeService",
+		"ClassExtendsName" : "None",
+		"ClassImplementsName" : [
+			"EventTypeService"
+		]
+	},
+	{
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/TheaterService.java",
+		"ClassName" : "TheaterService",
+		"ClassExtendsName" : "None",
+		"ClassImplementsName" : [
+			"TheaterService"
+		]
+	},
+	{
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/UserService.java",
+		"ClassName" : "UserService",
+		"ClassExtendsName" : "None",
+		"ClassImplementsName" : [
+			"UserService"
+		]
+	},
+	{
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+		"ClassName" : "BookingServiceImpl",
+		"ClassExtendsName" : "None",
+		"ClassImplementsName" : [
+			"BookingService"
+		]
+	},
+	{
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/CouponServiceImpl.java",
+		"ClassName" : "CouponServiceImpl",
+		"ClassExtendsName" : "None",
+		"ClassImplementsName" : [
+			"CouponService"
+		]
+	},
+	{
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/EventServiceImpl.java",
+		"ClassName" : "EventServiceImpl",
+		"ClassExtendsName" : "None",
+		"ClassImplementsName" : [
+			"EventService"
+		]
+	},
+	{
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/EventTypeServiceImpl.java",
+		"ClassName" : "EventTypeServiceImpl",
+		"ClassExtendsName" : "None",
+		"ClassImplementsName" : [
+			"EventTypeService"
+		]
+	},
+	{
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/TheaterServiceImpl.java",
+		"ClassName" : "TheaterServiceImpl",
+		"ClassExtendsName" : "None",
+		"ClassImplementsName" : [
+			"TheaterService"
+		]
+	},
+	{
+		"ClassParentFilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/UserServiceImpl.java",
+		"ClassName" : "UserServiceImpl",
+		"ClassExtendsName" : "None",
+		"ClassImplementsName" : [
+			"UserService"
 		]
 	}
 ]

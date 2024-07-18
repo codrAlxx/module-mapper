@@ -1,134 +1,656 @@
 [
 	{
-		"FilePath" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/controller/MovieController.java",
-		"MethodClassName" : "MovieController",
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/BookingController.java",
+		"MethodClassName" : "BookingController",
+		"MethodName" : "bookMyShow(Booking)",
+		"EndPointUrl" : "/booking/book"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/BookingController.java",
+		"MethodClassName" : "BookingController",
+		"MethodName" : "cancelMyShow(Long, Integer)",
+		"EndPointUrl" : "/booking/cancel/{bookingId}"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/BookingController.java",
+		"MethodClassName" : "BookingController",
+		"MethodName" : "getMyUpcomingBookings()",
+		"EndPointUrl" : "/booking/my/upcoming"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/BookingController.java",
+		"MethodClassName" : "BookingController",
+		"MethodName" : "getMyPastBookings()",
+		"EndPointUrl" : "/booking/my/past"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/CouponController.java",
+		"MethodClassName" : "CouponController",
+		"MethodName" : "addNewCoupon(Coupon)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/CouponController.java",
+		"MethodClassName" : "CouponController",
+		"MethodName" : "deleteExpiredCoupons()",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/EventController.java",
+		"MethodClassName" : "EventController",
+		"MethodName" : "addNewEvent(Event)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/EventController.java",
+		"MethodClassName" : "EventController",
+		"MethodName" : "deleteThisEvent(Long)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/EventController.java",
+		"MethodClassName" : "EventController",
+		"MethodName" : "getUpcomingEvents()",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/EventController.java",
+		"MethodClassName" : "EventController",
+		"MethodName" : "getEventsOfThisName(String)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/EventController.java",
+		"MethodClassName" : "EventController",
+		"MethodName" : "getAllEventsOfThisEventType(String)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/EventController.java",
+		"MethodClassName" : "EventController",
+		"MethodName" : "getAllEventsAtThisTheater(String)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/EventController.java",
+		"MethodClassName" : "EventController",
+		"MethodName" : "getEventsWithPaginationAndSort(int, int, String)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/EventTypeController.java",
+		"MethodClassName" : "EventTypeController",
+		"MethodName" : "addNewEventType(EventType)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/EventTypeController.java",
+		"MethodClassName" : "EventTypeController",
+		"MethodName" : "getAllEventTypes()",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/HelloWorldController.java",
+		"MethodClassName" : "HelloWorldController",
 		"MethodName" : "helloWorld()",
+		"EndPointUrl" : "/"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/TheaterController.java",
+		"MethodClassName" : "TheaterController",
+		"MethodName" : "addTheater(Theater)",
 		"EndPointUrl" : "None"
 	},
 	{
-		"FilePath" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/controller/MovieController.java",
-		"MethodClassName" : "MovieController",
-		"MethodName" : "addMovie(Movie)",
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/UserController.java",
+		"MethodClassName" : "UserController",
+		"MethodName" : "addUser(User)",
 		"EndPointUrl" : "None"
 	},
 	{
-		"FilePath" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/controller/MovieController.java",
-		"MethodClassName" : "MovieController",
-		"MethodName" : "getDirectorByMovieId(Long)",
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/UserController.java",
+		"MethodClassName" : "UserController",
+		"MethodName" : "authenticateAndGetToken(LoginForm)",
 		"EndPointUrl" : "None"
 	},
 	{
-		"FilePath" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/entity/Actor.java",
-		"MethodClassName" : "Actor",
-		"MethodName" : "Actor(String, String)",
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/exception/GlobalExceptionHandler.java",
+		"MethodClassName" : "GlobalExceptionHandler",
+		"MethodName" : "handleUserAgeLessThan18(UserAgeLessThan18Exception)",
 		"EndPointUrl" : "None"
 	},
 	{
-		"FilePath" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/entity/Movie.java",
-		"MethodClassName" : "Movie",
-		"MethodName" : "Movie(String,int,String,Director)",
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/exception/GlobalExceptionHandler.java",
+		"MethodClassName" : "GlobalExceptionHandler",
+		"MethodName" : "handleEndBeforeStart(EventEndBeforeStartException)",
 		"EndPointUrl" : "None"
 	},
 	{
-		"FilePath" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/service/MovieService.java",
-		"MethodClassName" : "MovieService",
-		"MethodName" : "addMovie(Movie)",
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/exception/GlobalExceptionHandler.java",
+		"MethodClassName" : "GlobalExceptionHandler",
+		"MethodName" : "handleSimilarEvents(EventClashException)",
 		"EndPointUrl" : "None"
 	},
 	{
-		"FilePath" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/service/MovieService.java",
-		"MethodClassName" : "MovieService",
-		"MethodName" : "getDirectorByMovieId(Long)",
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/exception/GlobalExceptionHandler.java",
+		"MethodClassName" : "GlobalExceptionHandler",
+		"MethodName" : "handleTheaterOREventNotFound(TheaterOREventNotExistsException)",
 		"EndPointUrl" : "None"
 	},
 	{
-		"FilePath" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/service/MovieService.java",
-		"MethodClassName" : "MovieService",
-		"MethodName" : "findMovieById(Long)",
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/exception/GlobalExceptionHandler.java",
+		"MethodClassName" : "GlobalExceptionHandler",
+		"MethodName" : "handleDependentBookings(DependentBookingExistsException)",
 		"EndPointUrl" : "None"
 	},
 	{
-		"FilePath" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/service/MovieService.java",
-		"MethodClassName" : "MovieService",
-		"MethodName" : "getAllMovies()",
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/exception/GlobalExceptionHandler.java",
+		"MethodClassName" : "GlobalExceptionHandler",
+		"MethodName" : "handleEventNotFound(EventNotFoundException)",
 		"EndPointUrl" : "None"
 	},
 	{
-		"FilePath" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/service/MovieService.java",
-		"MethodClassName" : "MovieService",
-		"MethodName" : "deleteMovieById(Long)",
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/exception/GlobalExceptionHandler.java",
+		"MethodClassName" : "GlobalExceptionHandler",
+		"MethodName" : "handleEventStartTimeHasAlreadyPassed(EventStartTimeHasAlreadyPassedException)",
 		"EndPointUrl" : "None"
 	},
 	{
-		"FilePath" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/service/MovieService.java",
-		"MethodClassName" : "MovieService",
-		"MethodName" : "updateMovieById(Long, Movie)",
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/exception/GlobalExceptionHandler.java",
+		"MethodClassName" : "GlobalExceptionHandler",
+		"MethodName" : "handleNotEnoughSeats(NotEnoughSeatsException)",
 		"EndPointUrl" : "None"
 	},
 	{
-		"FilePath" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/service/MovieService.java",
-		"MethodClassName" : "MovieService",
-		"MethodName" : "getActorsByMovieId(Long)",
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/exception/GlobalExceptionHandler.java",
+		"MethodClassName" : "GlobalExceptionHandler",
+		"MethodName" : "handleNotEnoughSeats(InvalidCouponException)",
 		"EndPointUrl" : "None"
 	},
 	{
-		"FilePath" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/service/MovieService.java",
-		"MethodClassName" : "MovieService",
-		"MethodName" : "addActor(Long, Actor)",
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/exception/GlobalExceptionHandler.java",
+		"MethodClassName" : "GlobalExceptionHandler",
+		"MethodName" : "handleUserMismatch(BookingUserMismatchException)",
 		"EndPointUrl" : "None"
 	},
 	{
-		"FilePath" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/service/impl/FizzBuzz.java",
-		"MethodClassName" : "FizzBuzz",
-		"MethodName" : "checkFizzBuzz(int)",
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/exception/GlobalExceptionHandler.java",
+		"MethodClassName" : "GlobalExceptionHandler",
+		"MethodName" : "handleNoSeatsToCancel(NoSeatsToCancelException)",
 		"EndPointUrl" : "None"
 	},
 	{
-		"FilePath" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/service/impl/MovieServiceImpl.java",
-		"MethodClassName" : "MovieServiceImpl",
-		"MethodName" : "addMovie(com.movie.movie.entity.Movie)",
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/exception/GlobalExceptionHandler.java",
+		"MethodClassName" : "GlobalExceptionHandler",
+		"MethodName" : "handleCancellingMore(CancellingMoreThanBookedException)",
 		"EndPointUrl" : "None"
 	},
 	{
-		"FilePath" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/service/impl/MovieServiceImpl.java",
-		"MethodClassName" : "MovieServiceImpl",
-		"MethodName" : "getDirectorByMovieId(Long)",
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/exception/GlobalExceptionHandler.java",
+		"MethodClassName" : "GlobalExceptionHandler",
+		"MethodName" : "handleBookingDoesNotExist(BookingDoesNotExistException)",
 		"EndPointUrl" : "None"
 	},
 	{
-		"FilePath" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/service/impl/MovieServiceImpl.java",
-		"MethodClassName" : "MovieServiceImpl",
-		"MethodName" : "findMovieById(Long)",
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/exception/GlobalExceptionHandler.java",
+		"MethodClassName" : "GlobalExceptionHandler",
+		"MethodName" : "handleCancellingTooLate(CancellingTooLateException)",
 		"EndPointUrl" : "None"
 	},
 	{
-		"FilePath" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/service/impl/MovieServiceImpl.java",
-		"MethodClassName" : "MovieServiceImpl",
-		"MethodName" : "getActorsByMovieId(Long)",
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/model/Theater.java",
+		"MethodClassName" : "Theater",
+		"MethodName" : "Theater()",
 		"EndPointUrl" : "None"
 	},
 	{
-		"FilePath" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/service/impl/MovieServiceImpl.java",
-		"MethodClassName" : "MovieServiceImpl",
-		"MethodName" : "addActor(Long, com.movie.movie.entity.Actor)",
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/model/Theater.java",
+		"MethodClassName" : "Theater",
+		"MethodName" : "Theater(String theaterName, String city, Integer movieSeatsCapacity, Integer concertSeatsCapacity, Integer liveShowSeatsCapacity)",
 		"EndPointUrl" : "None"
 	},
 	{
-		"FilePath" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/service/impl/MovieServiceImpl.java",
-		"MethodClassName" : "MovieServiceImpl",
-		"MethodName" : "getAllMovies()",
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/repository/BookingRepository.java",
+		"MethodClassName" : "BookingRepository",
+		"MethodName" : "checkIfBookingExists(Event)",
 		"EndPointUrl" : "None"
 	},
 	{
-		"FilePath" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/service/impl/MovieServiceImpl.java",
-		"MethodClassName" : "MovieServiceImpl",
-		"MethodName" : "deleteMovieById(Long)",
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/repository/BookingRepository.java",
+		"MethodClassName" : "BookingRepository",
+		"MethodName" : "findMyAllUpcomingBookings(Long, LocalDate)",
 		"EndPointUrl" : "None"
 	},
 	{
-		"FilePath" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/service/impl/MovieServiceImpl.java",
-		"MethodClassName" : "MovieServiceImpl",
-		"MethodName" : "updateMovieById(Long, com.movie.movie.entity.Movie)",
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/repository/BookingRepository.java",
+		"MethodClassName" : "BookingRepository",
+		"MethodName" : "findMyAllPastBookings(Long, LocalDate)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/repository/CouponRepository.java",
+		"MethodClassName" : "CouponRepository",
+		"MethodName" : "findAllByEventTypeId(Long)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/repository/CouponRepository.java",
+		"MethodClassName" : "CouponRepository",
+		"MethodName" : "findByExpiryBefore(LocalDateTime)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/repository/CouponRepository.java",
+		"MethodClassName" : "CouponRepository",
+		"MethodName" : "findByCouponCountLessThanEqual(int)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/repository/EventRepository.java",
+		"MethodClassName" : "EventRepository",
+		"MethodName" : "findByEventTypeIdAndTheaterIdAndTime(Theater, EventType, LocalDateTime, LocalDateTime)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/repository/EventRepository.java",
+		"MethodClassName" : "EventRepository",
+		"MethodName" : "findUpcomingEvents(LocalDateTime)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/repository/EventRepository.java",
+		"MethodClassName" : "EventRepository",
+		"MethodName" : "findAllEventsOfThisEventType(String)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/repository/EventRepository.java",
+		"MethodClassName" : "EventRepository",
+		"MethodName" : "findAllEventsAtThisTheater(String)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/repository/EventRepository.java",
+		"MethodClassName" : "EventRepository",
+		"MethodName" : "findAllByEventName(String)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/repository/EventTypeRepository.java",
+		"MethodClassName" : "EventTypeRepository",
+		"MethodName" : "findAll, count, save, findById, deleteById, delete, findAllById, existsById",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/repository/TheaterRepository.java",
+		"MethodClassName" : "TheaterRepository",
+		"MethodName" : "findAll, findById, save, deleteById, count, ...",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/repository/UserRepository.java",
+		"MethodClassName" : "UserRepository",
+		"MethodName" : "findByEmail(String)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/repository/UserRepository.java",
+		"MethodClassName" : "UserRepository",
+		"MethodName" : "save(User)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/repository/UserRepository.java",
+		"MethodClassName" : "UserRepository",
+		"MethodName" : "findAll()",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/repository/UserRepository.java",
+		"MethodClassName" : "UserRepository",
+		"MethodName" : "findById(Long)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/repository/UserRepository.java",
+		"MethodClassName" : "UserRepository",
+		"MethodName" : "deleteById(Long)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/repository/UserRepository.java",
+		"MethodClassName" : "UserRepository",
+		"MethodName" : "delete(User)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/repository/UserRepository.java",
+		"MethodClassName" : "UserRepository",
+		"MethodName" : "existsById(Long)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/scheduler/",
+		"MethodClassName" : "MyCouponScheduler",
+		"MethodName" : "deleteExpiredCoupons()",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/security/JwtAuthenticationFilter.java",
+		"MethodClassName" : "JwtAuthenticationFilter",
+		"MethodName" : "doFilterInternal(HttpServletRequest, HttpServletResponse, FilterChain)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/security/JwtService.java",
+		"MethodClassName" : "JwtService",
+		"MethodName" : "generateToken(UserDetails)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/security/JwtService.java",
+		"MethodClassName" : "JwtService",
+		"MethodName" : "extractUsername(String)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/security/JwtService.java",
+		"MethodClassName" : "JwtService",
+		"MethodName" : "isTokenValid(String)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/security/MyUserDetails.java",
+		"MethodClassName" : "MyUserDetails",
+		"MethodName" : "MyUserDetails(User)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/security/MyUserDetails.java",
+		"MethodClassName" : "MyUserDetails",
+		"MethodName" : "getAuthorities()",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/security/MyUserDetails.java",
+		"MethodClassName" : "MyUserDetails",
+		"MethodName" : "getPassword()",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/security/MyUserDetails.java",
+		"MethodClassName" : "MyUserDetails",
+		"MethodName" : "getUsername()",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/security/MyUserDetails.java",
+		"MethodClassName" : "MyUserDetails",
+		"MethodName" : "isAccountNonExpired()",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/security/MyUserDetails.java",
+		"MethodClassName" : "MyUserDetails",
+		"MethodName" : "isAccountNonLocked()",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/security/MyUserDetails.java",
+		"MethodClassName" : "MyUserDetails",
+		"MethodName" : "isCredentialsNonExpired()",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/security/MyUserDetails.java",
+		"MethodClassName" : "MyUserDetails",
+		"MethodName" : "isEnabled()",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/security/SecurityConfiguration.java",
+		"MethodClassName" : "SecurityConfiguration",
+		"MethodName" : "authenticationProvider()",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/security/SecurityConfiguration.java",
+		"MethodClassName" : "SecurityConfiguration",
+		"MethodName" : "authenticationManager()",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/security/SecurityConfiguration.java",
+		"MethodClassName" : "SecurityConfiguration",
+		"MethodName" : "passwordEncoder()",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/security/SecurityConfiguration.java",
+		"MethodClassName" : "SecurityConfiguration",
+		"MethodName" : "filterChain(HttpSecurity)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/security/UserDetailsServiceImpl.java",
+		"MethodClassName" : "UserDetailsServiceImpl",
+		"MethodName" : "loadUserByUsername(String)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/BookingService.java",
+		"MethodClassName" : "BookingService",
+		"MethodName" : "bookMyShow(Booking)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/BookingService.java",
+		"MethodClassName" : "BookingService",
+		"MethodName" : "cancelMyShow(Long, Integer)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/BookingService.java",
+		"MethodClassName" : "BookingService",
+		"MethodName" : "findMyUpcomingBookings()",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/BookingService.java",
+		"MethodClassName" : "BookingService",
+		"MethodName" : "findMyPastBookings()",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/CouponService.java",
+		"MethodClassName" : "CouponService",
+		"MethodName" : "addNewCoupon(com.hashedin.huSpark.model.Coupon)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/CouponService.java",
+		"MethodClassName" : "CouponService",
+		"MethodName" : "deleteExpiredCoupons()",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/EventService.java",
+		"MethodClassName" : "EventService",
+		"MethodName" : "addNewEvent(Event)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/EventService.java",
+		"MethodClassName" : "EventService",
+		"MethodName" : "deleteThisEvent(Long)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/EventService.java",
+		"MethodClassName" : "EventService",
+		"MethodName" : "getUpcomingEvents()",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/EventService.java",
+		"MethodClassName" : "EventService",
+		"MethodName" : "findAllByEventName(String)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/EventService.java",
+		"MethodClassName" : "EventService",
+		"MethodName" : "findAllEventsOfThisEventType(String)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/EventService.java",
+		"MethodClassName" : "EventService",
+		"MethodName" : "findAllEventsAtThisTheater(String)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/EventService.java",
+		"MethodClassName" : "EventService",
+		"MethodName" : "findEventsWithPaginationAndSorting(int, int, String)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/EventTypeService.java",
+		"MethodClassName" : "EventTypeService",
+		"MethodName" : "addNewEventType(EventType)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/EventTypeService.java",
+		"MethodClassName" : "EventTypeService",
+		"MethodName" : "getAllEventTypes()",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/TheaterService.java",
+		"MethodClassName" : "TheaterService",
+		"MethodName" : "addTheater(Theater)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/UserService.java",
+		"MethodClassName" : "UserService",
+		"MethodName" : "addUser(User)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/UserService.java",
+		"MethodClassName" : "UserService",
+		"MethodName" : "getToken(LoginForm)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+		"MethodClassName" : "BookingServiceImpl",
+		"MethodName" : "bookMyShow(Booking)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+		"MethodClassName" : "BookingServiceImpl",
+		"MethodName" : "cancelMyShow(Long, Integer)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+		"MethodClassName" : "BookingServiceImpl",
+		"MethodName" : "findMyUpcomingBookings()",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+		"MethodClassName" : "BookingServiceImpl",
+		"MethodName" : "findMyPastBookings()",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/CouponServiceImpl.java",
+		"MethodClassName" : "CouponServiceImpl",
+		"MethodName" : "addNewCoupon(com.hashedin.huSpark.model.Coupon)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/CouponServiceImpl.java",
+		"MethodClassName" : "CouponServiceImpl",
+		"MethodName" : "deleteExpiredCoupons()",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/EventServiceImpl.java",
+		"MethodClassName" : "EventServiceImpl",
+		"MethodName" : "addNewEvent(Event)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/EventServiceImpl.java",
+		"MethodClassName" : "EventServiceImpl",
+		"MethodName" : "deleteThisEvent(Long)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/EventServiceImpl.java",
+		"MethodClassName" : "EventServiceImpl",
+		"MethodName" : "getUpcomingEvents()",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/EventServiceImpl.java",
+		"MethodClassName" : "EventServiceImpl",
+		"MethodName" : "findAllByEventName(String)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/EventServiceImpl.java",
+		"MethodClassName" : "EventServiceImpl",
+		"MethodName" : "findAllEventsOfThisEventType(String)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/EventServiceImpl.java",
+		"MethodClassName" : "EventServiceImpl",
+		"MethodName" : "findAllEventsAtThisTheater(String)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/EventServiceImpl.java",
+		"MethodClassName" : "EventServiceImpl",
+		"MethodName" : "findEventsWithPaginationAndSorting(int, int, String)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/EventTypeServiceImpl.java",
+		"MethodClassName" : "EventTypeServiceImpl",
+		"MethodName" : "addNewEventType(EventType)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/EventTypeServiceImpl.java",
+		"MethodClassName" : "EventTypeServiceImpl",
+		"MethodName" : "getAllEventTypes()",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/TheaterServiceImpl.java",
+		"MethodClassName" : "TheaterServiceImpl",
+		"MethodName" : "addTheater(Theater)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/UserServiceImpl.java",
+		"MethodClassName" : "UserServiceImpl",
+		"MethodName" : "addUser(User)",
+		"EndPointUrl" : "None"
+	},
+	{
+		"FilePath" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/UserServiceImpl.java",
+		"MethodClassName" : "UserServiceImpl",
+		"MethodName" : "getToken(LoginForm)",
 		"EndPointUrl" : "None"
 	}
 ]

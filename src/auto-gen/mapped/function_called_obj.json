@@ -1,26 +1,662 @@
 [
 	{
 		"calling_method" : {
-			"file_path" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/controller/MovieController.java",
-			"class_name" : "MovieController",
-			"method_name" : "addMovie(Movie)"
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/BookingController.java",
+			"class_name" : "BookingController",
+			"method_name" : "bookMyShow(Booking)"
 		},
 		"receiving_method" : {
-			"file_path" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/service/MovieService.java",
-			"class_name" : "MovieService",
-			"method_name" : "addMovie(Movie)"
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/BookingService.java",
+			"class_name" : "BookingService",
+			"method_name" : "bookMyShow(Booking)"
 		}
 	},
 	{
 		"calling_method" : {
-			"file_path" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/controller/MovieController.java",
-			"class_name" : "MovieController",
-			"method_name" : "getDirectorByMovieId(Long)"
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/BookingController.java",
+			"class_name" : "BookingController",
+			"method_name" : "cancelMyShow(Long, Integer)"
 		},
 		"receiving_method" : {
-			"file_path" : "C:/Users/aljha/Documents/java/hu/movie/movie/src/main/java/com/movie/movie/service/MovieService.java",
-			"class_name" : "MovieService",
-			"method_name" : "getDirectorByMovieId(Long)"
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/BookingService.java",
+			"class_name" : "BookingService",
+			"method_name" : "cancelMyShow(Long, Integer)"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/BookingController.java",
+			"class_name" : "BookingController",
+			"method_name" : "getMyUpcomingBookings()"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/BookingService.java",
+			"class_name" : "BookingService",
+			"method_name" : "findMyUpcomingBookings()"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/BookingController.java",
+			"class_name" : "BookingController",
+			"method_name" : "getMyPastBookings()"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/BookingService.java",
+			"class_name" : "BookingService",
+			"method_name" : "findMyPastBookings()"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/CouponController.java",
+			"class_name" : "CouponController",
+			"method_name" : "deleteExpiredCoupons()"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/CouponService.java",
+			"class_name" : "couponService",
+			"method_name" : "deleteExpiredCoupons()"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/EventController.java",
+			"class_name" : "EventController",
+			"method_name" : "addNewEvent(Event)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/EventService.java",
+			"class_name" : "EventService",
+			"method_name" : "addNewEvent(Event)"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/EventController.java",
+			"class_name" : "EventController",
+			"method_name" : "deleteThisEvent(Long)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/EventService.java",
+			"class_name" : "EventService",
+			"method_name" : "deleteThisEvent(Long)"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/EventController.java",
+			"class_name" : "EventController",
+			"method_name" : "getUpcomingEvents()"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/EventService.java",
+			"class_name" : "EventService",
+			"method_name" : "getUpcomingEvents()"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/EventController.java",
+			"class_name" : "EventController",
+			"method_name" : "getEventsOfThisName(String)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/EventService.java",
+			"class_name" : "EventService",
+			"method_name" : "findAllByEventName(String)"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/EventController.java",
+			"class_name" : "EventController",
+			"method_name" : "getAllEventsOfThisEventType(String)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/EventService.java",
+			"class_name" : "EventService",
+			"method_name" : "findAllEventsOfThisEventType(String)"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/EventController.java",
+			"class_name" : "EventController",
+			"method_name" : "getAllEventsAtThisTheater(String)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/EventService.java",
+			"class_name" : "EventService",
+			"method_name" : "findAllEventsAtThisTheater(String)"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/EventController.java",
+			"class_name" : "EventController",
+			"method_name" : "getEventsWithPaginationAndSort(int, int, String)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/EventService.java",
+			"class_name" : "EventService",
+			"method_name" : "findEventsWithPaginationAndSorting(int, int, String)"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/EventTypeController.java",
+			"class_name" : "EventTypeController",
+			"method_name" : "addNewEventType(EventType)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/EventTypeService.java",
+			"class_name" : "EventTypeService",
+			"method_name" : "addNewEventType(EventType)"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/EventTypeController.java",
+			"class_name" : "EventTypeController",
+			"method_name" : "getAllEventTypes()"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/EventTypeService.java",
+			"class_name" : "EventTypeService",
+			"method_name" : "getAllEventTypes()"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/TheaterController.java",
+			"class_name" : "TheaterController",
+			"method_name" : "addTheater(Theater)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/TheaterService.java",
+			"class_name" : "TheaterService",
+			"method_name" : "addTheater(Theater)"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/UserController.java",
+			"class_name" : "UserController",
+			"method_name" : "addUser(User)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/UserService.java",
+			"class_name" : "UserService",
+			"method_name" : "addUser(User)"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/controller/UserController.java",
+			"class_name" : "UserController",
+			"method_name" : "authenticateAndGetToken(LoginForm)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/UserService.java",
+			"class_name" : "UserService",
+			"method_name" : "getToken(LoginForm)"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/scheduler/",
+			"class_name" : "MyCouponScheduler",
+			"method_name" : "deleteExpiredCoupons()"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/CouponService.java",
+			"class_name" : "CouponService",
+			"method_name" : "deleteExpiredCoupons()"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/security/JwtAuthenticationFilter.java",
+			"class_name" : "JwtAuthenticationFilter",
+			"method_name" : "doFilterInternal(HttpServletRequest, HttpServletResponse, FilterChain)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/security/JwtService.java",
+			"class_name" : "jwtService",
+			"method_name" : "extractUsername(String)"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/security/JwtAuthenticationFilter.java",
+			"class_name" : "JwtAuthenticationFilter",
+			"method_name" : "doFilterInternal(HttpServletRequest, HttpServletResponse, FilterChain)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/security/JwtService.java",
+			"class_name" : "jwtService",
+			"method_name" : "isTokenValid(String)"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/security/MyUserDetails.java",
+			"class_name" : "MyUserDetails",
+			"method_name" : "getRole()"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/model/User.java",
+			"class_name" : "User",
+			"method_name" : "getRole()"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/security/UserDetailsServiceImpl.java",
+			"class_name" : "UserDetailsServiceImpl",
+			"method_name" : "loadUserByUsername(String)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/repository/UserRepository.java",
+			"class_name" : "UserRepository",
+			"method_name" : "findByEmail(String)"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "bookMyShow(Booking)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/model/User.java",
+			"class_name" : "User",
+			"method_name" : "getUserId()"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "bookMyShow(Booking)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/model/User.java",
+			"class_name" : "User",
+			"method_name" : "getBookingsCount()"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "bookMyShow(Booking)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/model/Coupon.java",
+			"class_name" : "Coupon",
+			"method_name" : "getCouponCount()"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "bookMyShow(Booking)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/model/Coupon.java",
+			"class_name" : "Coupon",
+			"method_name" : "getCouponId()"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "bookMyShow(Booking)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/model/Event.java",
+			"class_name" : "Event",
+			"method_name" : "getEventId()"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "bookMyShow(Booking)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/model/Event.java",
+			"class_name" : "Event",
+			"method_name" : "getStartTime()"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "bookMyShow(Booking)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/model/Event.java",
+			"class_name" : "Event",
+			"method_name" : "getAvailableSeats()"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "bookMyShow(Booking)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "blockTheseSeats(Booking, Event)"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "bookMyShow(Booking)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "getThisUser()"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "cancelMyShow(Long, Integer)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "getThisUser()"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "cancelMyShow(Long, Integer)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/model/Booking.java",
+			"class_name" : "Booking",
+			"method_name" : "getTotalNoOfSeatsBooked()"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "cancelMyShow(Long, Integer)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/model/Booking.java",
+			"class_name" : "Booking",
+			"method_name" : "getTotalNoOfSeatsCancelled()"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "cancelMyShow(Long, Integer)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/model/Booking.java",
+			"class_name" : "Booking",
+			"method_name" : "getEvent()"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "cancelMyShow(Long, Integer)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/model/Booking.java",
+			"class_name" : "Booking",
+			"method_name" : "getUser()"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "cancelMyShow(Long, Integer)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/model/User.java",
+			"class_name" : "User",
+			"method_name" : "getUserId()"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "cancelMyShow(Long, Integer)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/model/User.java",
+			"class_name" : "User",
+			"method_name" : "getBookingsCount()"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "cancelMyShow(Long, Integer)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/model/Coupon.java",
+			"class_name" : "Coupon",
+			"method_name" : "getCouponCount()"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "cancelMyShow(Long, Integer)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/model/Coupon.java",
+			"class_name" : "Coupon",
+			"method_name" : "getCouponId()"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "cancelMyShow(Long, Integer)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/model/Event.java",
+			"class_name" : "Event",
+			"method_name" : "getEventType()"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "cancelMyShow(Long, Integer)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "isNoOfSeatsNotAvailableToCancel(Booking, Integer)"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "cancelMyShow(Long, Integer)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "releaseSeatsOccupied(Booking, Integer)"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "cancelMyShow(Long, Integer)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "refundAmount(Booking, Integer, long, HashMap<String, String>)"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "cancelMyShow(Long, Integer)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "addBookingCancellationEntry(HashMap<String, String>, Booking)"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "cancelMyShow(Long, Integer)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/model/Booking.java",
+			"class_name" : "Booking",
+			"method_name" : "getTotalNoOfSeatsBooked()"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "cancelMyShow(Long, Integer)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/model/Booking.java",
+			"class_name" : "Booking",
+			"method_name" : "getTotalNoOfSeatsCancelled()"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "cancelMyShow(Long, Integer)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "decrementUserBookingCount(Booking)"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "cancelMyShow(Long, Integer)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "incrementCouponCountIfUsed(Booking)"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "findMyUpcomingBookings()"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/model/User.java",
+			"class_name" : "User",
+			"method_name" : "getUserId()"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "findMyUpcomingBookings()"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "findMyAllUpcomingBookings(Long, LocalDate)"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "findMyPastBookings()"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/model/User.java",
+			"class_name" : "User",
+			"method_name" : "getUserId()"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "findMyPastBookings()"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/BookingServiceImpl.java",
+			"class_name" : "BookingServiceImpl",
+			"method_name" : "findMyAllPastBookings(Long, LocalDate)"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/CouponServiceImpl.java",
+			"class_name" : "CouponServiceImpl",
+			"method_name" : "deleteExpiredCoupons()"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/repository/CouponRepository.java",
+			"class_name" : "CouponRepository",
+			"method_name" : "findByCouponCountLessThanEqual(int)"
+		}
+	},
+	{
+		"calling_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/service/impl/UserServiceImpl.java",
+			"class_name" : "UserServiceImpl",
+			"method_name" : "getToken(LoginForm)"
+		},
+		"receiving_method" : {
+			"file_path" : "C:/Users/antekriwal/Desktop/My WorkSpace/module-mapping/api-server/cloned/src/main/java/com/hashedin/huSpark/security/JwtService.java",
+			"class_name" : "jwtService",
+			"method_name" : "generateToken(UserDetails)"
 		}
 	}
 ]

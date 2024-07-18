@@ -5,7 +5,7 @@
   text-align: center;
   padding: 2%;
   background: linear-gradient(to bottom, #B1AFFF 0%, #BBE1FA 100%);
-  height: 100%;
+  min-height: 100%;
 }
 
 .main-title {

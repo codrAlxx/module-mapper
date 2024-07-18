@@ -1,81 +1,236 @@
 [
 	{
-		"Name" : "Actor",
+		"Name" : "Booking",
 		"Fields" : [
 			{
-				"field_name" : "id",
+				"field_name" : "bookingId",
 				"field_type" : "Long"
 			},
 			{
-				"field_name" : "name",
-				"field_type" : "String"
+				"field_name" : "totalNoOfSeatsBooked",
+				"field_type" : "Integer"
 			},
 			{
-				"field_name" : "biography",
-				"field_type" : "String"
+				"field_name" : "totalNoOfSeatsCancelled",
+				"field_type" : "Integer"
 			},
 			{
-				"field_name" : "movie",
-				"field_type" : "Movie"
+				"field_name" : "totalAmountPayed",
+				"field_type" : "Float"
+			},
+			{
+				"field_name" : "bookingDate",
+				"field_type" : "LocalDate"
+			},
+			{
+				"field_name" : "user",
+				"field_type" : "User"
+			},
+			{
+				"field_name" : "event",
+				"field_type" : "Event"
+			},
+			{
+				"field_name" : "coupon",
+				"field_type" : "Coupon"
+			},
+			{
+				"field_name" : "bookingCancellations",
+				"field_type" : "Set<BookingCancellation>"
 			}
 		]
 	},
 	{
-		"Name" : "Crew",
+		"Name" : "BookingCancellation",
 		"Fields" : [
 			{
-				"field_name" : "id",
+				"field_name" : "cancellationId",
+				"field_type" : "Long"
+			},
+			{
+				"field_name" : "amountRefunded",
+				"field_type" : "Float"
+			},
+			{
+				"field_name" : "cancellationTime",
+				"field_type" : "LocalDateTime"
+			},
+			{
+				"field_name" : "booking",
+				"field_type" : "Booking"
+			}
+		]
+	},
+	{
+		"Name" : "Coupon",
+		"Fields" : [
+			{
+				"field_name" : "couponId",
+				"field_type" : "Long"
+			},
+			{
+				"field_name" : "couponCode",
+				"field_type" : "String"
+			},
+			{
+				"field_name" : "offPercentage",
+				"field_type" : "Float"
+			},
+			{
+				"field_name" : "expiry",
+				"field_type" : "LocalDateTime"
+			},
+			{
+				"field_name" : "couponCount",
+				"field_type" : "Integer"
+			},
+			{
+				"field_name" : "eventType",
+				"field_type" : "EventType"
+			},
+			{
+				"field_name" : "booking",
+				"field_type" : "Set<Booking>"
+			}
+		]
+	},
+	{
+		"Name" : "Event",
+		"Fields" : [
+			{
+				"field_name" : "eventId",
+				"field_type" : "Long"
+			},
+			{
+				"field_name" : "eventName",
+				"field_type" : "String"
+			},
+			{
+				"field_name" : "availableSeats",
+				"field_type" : "Integer"
+			},
+			{
+				"field_name" : "startTime",
+				"field_type" : "LocalDateTime"
+			},
+			{
+				"field_name" : "endTime",
+				"field_type" : "LocalDateTime"
+			},
+			{
+				"field_name" : "eventType",
+				"field_type" : "EventType"
+			},
+			{
+				"field_name" : "theater",
+				"field_type" : "Theater"
+			},
+			{
+				"field_name" : "setOfBookings",
+				"field_type" : "Set<Booking>"
+			}
+		]
+	},
+	{
+		"Name" : "EventType",
+		"Fields" : [
+			{
+				"field_name" : "eventTypeId",
+				"field_type" : "Long"
+			},
+			{
+				"field_name" : "gstPercentage",
+				"field_type" : "Float"
+			},
+			{
+				"field_name" : "price",
+				"field_type" : "Float"
+			},
+			{
+				"field_name" : "type",
+				"field_type" : "String"
+			},
+			{
+				"field_name" : "setOfCoupons",
+				"field_type" : "Set<Coupon>"
+			},
+			{
+				"field_name" : "setOfEvents",
+				"field_type" : "Set<Event>"
+			}
+		]
+	},
+	{
+		"Name" : "Theater",
+		"Fields" : [
+			{
+				"field_name" : "theaterId",
+				"field_type" : "Long"
+			},
+			{
+				"field_name" : "theaterName",
+				"field_type" : "String"
+			},
+			{
+				"field_name" : "city",
+				"field_type" : "String"
+			},
+			{
+				"field_name" : "movieSeatsCapacity",
+				"field_type" : "Integer"
+			},
+			{
+				"field_name" : "concertSeatsCapacity",
+				"field_type" : "Integer"
+			},
+			{
+				"field_name" : "liveShowSeatsCapacity",
+				"field_type" : "Integer"
+			},
+			{
+				"field_name" : "setOfEvents",
+				"field_type" : "Set<Event>"
+			}
+		]
+	},
+	{
+		"Name" : "User",
+		"Fields" : [
+			{
+				"field_name" : "userId",
 				"field_type" : "Long"
 			},
 			{
 				"field_name" : "name",
 				"field_type" : "String"
+			},
+			{
+				"field_name" : "email",
+				"field_type" : "String"
+			},
+			{
+				"field_name" : "password",
+				"field_type" : "String"
+			},
+			{
+				"field_name" : "mobile",
+				"field_type" : "String"
+			},
+			{
+				"field_name" : "dateOfBirth",
+				"field_type" : "LocalDate"
+			},
+			{
+				"field_name" : "bookingsCount",
+				"field_type" : "Integer"
 			},
 			{
 				"field_name" : "role",
 				"field_type" : "String"
-			}
-		]
-	},
-	{
-		"Name" : "Director",
-		"Fields" : [
-			{
-				"field_name" : "id",
-				"field_type" : "Long"
 			},
 			{
-				"field_name" : "name",
-				"field_type" : "String"
-			},
-			{
-				"field_name" : "biography",
-				"field_type" : "String"
-			}
-		]
-	},
-	{
-		"Name" : "Movie",
-		"Fields" : [
-			{
-				"field_name" : "Id",
-				"field_type" : "long"
-			},
-			{
-				"field_name" : "title",
-				"field_type" : "String"
-			},
-			{
-				"field_name" : "releaseYear",
-				"field_type" : "int"
-			},
-			{
-				"field_name" : "genre",
-				"field_type" : "String"
-			},
-			{
-				"field_name" : "director",
-				"field_type" : "Director"
+				"field_name" : "setOfBookings",
+				"field_type" : "Set<Booking>"
 			}
 		]
 	}
