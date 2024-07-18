@@ -5,7 +5,7 @@
 
 
 .float-button button {
-    position: fixed;
+  position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 999;
@@ -13,11 +13,14 @@
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
   font-size: 25px;
-  background: #fff;
+  background-color: #424242;
+  display:flex;
+  align-items:center;
+  justify-content: center;
   border: none;
   border-radius: 100px;
   padding: 10px 25px;
-  color: #6d5dfc;
+  color: black;
   letter-spacing: 1px;
   cursor: pointer;
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, .2),
@@ -30,20 +33,26 @@
     white-space: nowrap;
   }
   &.loading {
-    animation: loading .5s .75s alternate infinite;
-    transition: width .5s .25s;
+    animation: loading .5s .1s alternate infinite;
+    transition: width .5s .1s;
     width: 51px;
     span {
       opacity: 0;
       transition: opacity .25s;
     }
   }
+
+  font-weight:700;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-family: "montserrat";
+  color: #fff;
 }
 
 @keyframes loading {
   100% {
     transform: scale(1.2);
-    background: #fff7ba;
+    background: #fff;
   }
 }
 

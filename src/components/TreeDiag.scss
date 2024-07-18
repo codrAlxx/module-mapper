@@ -20,17 +20,16 @@
 }
 
 .column-left {
-  width: 20%;
-  // display: flex;
+  width: 320px;
+  height: 95vh;
+  display: flex;
   position: fixed;
   border-radius: 8px;
   z-index: 2;
-  margin-left: 3%;
-  margin-top: 2%;
-  // margin-left: 1%;
+  margin-left: 2%;
+  margin-top: 1%;
   flex-direction: column;
   background: #424242;
-  // border-right: 1px solid #fff;
   border-top: 20px solid #D9D8D8;
 }
 
@@ -81,13 +80,15 @@
 }
 
 .prop-container {
-  padding: 8px 5px;
-  margin: 5px 20px;
+  margin-top: 3%;
+  margin-left: 8%;
+  margin-right: 8%;
 }
 .button-combo{
   display: flex;
 }
 .prop {
+  font-family: 'montserrat';
   font-weight: bold;
   display: block;
   color: white;
@@ -196,7 +197,7 @@ circle{
 
 /* Text Styling Inside Buttons */
 .btn p {
-  font-size: 1.6rem;
+  // font-size: 1rem;
   margin: 0; /* Resetting margin to align text properly inside the button */
 }
 
@@ -212,12 +213,37 @@ circle{
   height: 4rem; /* Matching height for all buttons */
 }
 
-.btn_tree:last-child {
-  margin-right: 0; /* Removing margin for the last button */
-}
-
 .btn_tree p {
   margin-top: 0.5rem;
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.btn.btn__primary.btn_tree p {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: 'montserrat';
+}
+
+.btn.btn__primary.btn_tree {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zoom-btns-div {
+  margin-top: 12%;
+}
+
+.switches {
+  width: 50%;
+}
+
+.switch-div-1 {
+  margin-top: 11%;
+  border-top: 0.1px solid #d9d8d8;
+}
+.switch-div-2 {
+  padding-bottom: 7%;
+  border-bottom: 0.1px solid #d9d8d8;
 }

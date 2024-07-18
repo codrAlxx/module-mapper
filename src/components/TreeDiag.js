@@ -5,12 +5,11 @@ import Switch from './Switch';
 import MixedNodeElement from './MixedNodeElement';
 import PureSvgNodeElement from './PureSvgNodeElement';
 import './TreeDiag.scss';
-import { IconName } from "react-icons/ai";
-import { AiOutlineZoomIn, AiOutlineZoomOut } from "react-icons/ai";
+import { IconName } from 'react-icons/ai';
+import { AiOutlineZoomIn, AiOutlineZoomOut } from 'react-icons/ai';
 
 // Data examples
 import mapJson from '../examples/org-chart.json';
-
 
 console.log('Demo React version: ', React.version);
 
@@ -39,7 +38,7 @@ const customNodeFnMapping = {
         }}
       />
     ),
-  }
+  },
 };
 
 const countNodes = (count = 0, n) => {
@@ -277,54 +276,60 @@ class TreeDiag extends Component {
   render() {
     return (
       <div className="reset-this">
-                  <div className="column-left">
-            <div className="controls-container">
-              <div className="prop-container">
-                <h4 className="prop">Orientation</h4>
-                
-                <div className='button-combo'>
-                <div className="btn btn__primary btn_tree" 
-                                  onClick={() => this.setOrientation('horizontal')}
-                ><p>{'Horizontal'}</p></div>
-                <div className="btn btn__primary btn_tree"
-                                  onClick={() => this.setOrientation('vertical')}
-                ><p>{'Vertical'}</p></div>
+        <div className="column-left">
+          <div className="controls-container">
+            <div className="prop-container">
+              <h4 className="prop">Orientation</h4>
+
+              <div className="button-combo">
+                <div
+                  className="btn btn__primary btn_tree"
+                  onClick={() => this.setOrientation('horizontal')}
+                >
+                  <p>{'HORIZONTAL'}</p>
+                </div>
+                <div
+                  className="btn btn__primary btn_tree"
+                  onClick={() => this.setOrientation('vertical')}
+                >
+                  <p>{'VERTICAL'}</p>
                 </div>
               </div>
-              
+            </div>
 
-              <div className="prop-container">
-                <h4 className="prop">Path style</h4>
+            <div className="prop-container">
+              <h4 className="prop">Path style</h4>
 
-                                <div className='button-combo'>
-                <div className="btn btn__primary btn_tree"                   onClick={() => this.setPathFunc('diagonal')}
-                ><p>{'Diagnol'}</p></div>
-                <div className="btn btn__primary btn_tree"                   onClick={() => this.setPathFunc('elbow')}
-                ><p>{'Elbow'}</p></div>
+              <div className="button-combo">
+                <div
+                  className="btn btn__primary btn_tree"
+                  onClick={() => this.setPathFunc('diagonal')}
+                >
+                  <p>{'DIAGONAL'}</p>
                 </div>
-
-                                
-                                <div className='button-combo'>
-                <div className="btn btn__primary btn_tree"                   onClick={() => this.setPathFunc('straight')}
-                ><p>{'Stright'}</p></div>
-                <div className="btn btn__primary btn_tree"                   onClick={() => this.setPathFunc('step')}
-                ><p>{'Step'}</p></div>
-                </div>
-              </div>
-
-
-
-              <div className='prop-container '>
-                <h4 className="prop">Adjust Zoom</h4>
-
-                <div className='button-combo'>
-                <div className="btn btn__primary btn_tree" onClick={this.handleZoomIn}><p><AiOutlineZoomIn style={{fontSize:'24px', marginTop:'2px'}}/></p></div>
-                <div className="btn btn__primary btn_tree" onClick={this.handleZoomOut}><p><AiOutlineZoomOut style={{fontSize:'24px', }}/></p></div>
+                <div
+                  className="btn btn__primary btn_tree"
+                  onClick={() => this.setPathFunc('elbow')}
+                >
+                  <p>{'ELBOW'}</p>
                 </div>
               </div>
 
-              <div style={{display: 'flex'}}>
-              <div className="prop-container ">
+              <div className="button-combo">
+                <div
+                  className="btn btn__primary btn_tree"
+                  onClick={() => this.setPathFunc('straight')}
+                >
+                  <p>{'STRAIGHT'}</p>
+                </div>
+                <div className="btn btn__primary btn_tree" onClick={() => this.setPathFunc('step')}>
+                  <p>{'STEP'}</p>
+                </div>
+              </div>
+            </div>
+
+            <div style={{ display: 'flex' }} className="switch-div-1">
+              <div className="prop-container switches">
                 <h4 className="prop">Collapsible</h4>
                 <Switch
                   name="collapsibleBtn"
@@ -333,7 +338,7 @@ class TreeDiag extends Component {
                 />
               </div>
 
-              <div className="prop-container">
+              <div className="prop-container switches">
                 <h4 className="prop">Zoomable</h4>
                 <Switch
                   name="zoomableBtn"
@@ -341,13 +346,11 @@ class TreeDiag extends Component {
                   onChange={this.toggleZoomable}
                 />
               </div>
-              </div>
+            </div>
 
-              <div style={{display: 'flex'}}>
-              <div className="prop-container">
-                <h4 className="prop">
-                  Center Nodes 
-                </h4>
+            <div style={{ display: 'flex' }} className="switch-div-2">
+              <div className="prop-container switches">
+                <h4 className="prop">Center Nodes</h4>
                 <Switch
                   name="centerNodesBtn"
                   checked={this.state.dimensions !== undefined}
@@ -355,8 +358,8 @@ class TreeDiag extends Component {
                 />
               </div>
 
-              <div className="prop-container">
-                <h4 className="prop">Collapse Neighbor</h4>
+              <div className="prop-container switches">
+                <h4 className="prop">Collapse Neighbour</h4>
                 <Switch
                   name="collapseNeighborsBtn"
                   checked={this.state.shouldCollapseNeighborNodes}
@@ -364,12 +367,34 @@ class TreeDiag extends Component {
                 />
               </div>
             </div>
-              </div>
-          </div>
-        <div className="demo-container">
 
+            <div className="prop-container zoom-btns-div">
+              <div className="button-combo">
+                <div className="btn btn__primary btn_tree" onClick={this.handleZoomIn}>
+                  <p>
+                    <AiOutlineZoomIn style={{ fontSize: '24px', marginTop: '2px' }} />
+                  </p>
+                </div>
+                <div className="btn btn__primary btn_tree" onClick={this.handleZoomOut}>
+                  <p>
+                    <AiOutlineZoomOut style={{ fontSize: '24px' }} />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="demo-container">
           <div className="column-right">
-            <div className="tree-stats-container">
+            <div
+              className="tree-stats-container"
+              style={{
+                float: 'right',
+                height: '0px',
+                color: '#424242',
+                textTransform: 'uppercase',
+              }}
+            >
               Total nodes: {this.state.totalNodeCount}
             </div>
             <div ref={tc => (this.treeContainer = tc)} className="tree-container">
