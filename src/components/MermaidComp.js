@@ -1,17 +1,16 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import Mermaid from "./Mermaid";
-import example from "../examples/ExampleMermaid";
-import "./mermaid.css";
-
-
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Mermaid from './Mermaid';
+import example from '../examples/ExampleMermaid';
+import './mermaid.css';
 
 function MermaidComp() {
-  console.log(example)
+  console.log(example);
   return (
     <div className="merm">
+      <div className="main-title">Mermaid Diagram</div>
       <Mermaid chart={example} />
     </div>
   );
 }
-export default MermaidComp
+export default MermaidComp;
