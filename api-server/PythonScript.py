@@ -1019,10 +1019,10 @@ def generate_mermaid():
         os.mkdir(dir_name)
 
     with open(f'{dir_name}/graph.txt', 'w') as f:
-        f.write(f'{model_mermaid_code}\n\n{mermaid_code}')
+        f.write(f'{mermaid_code}\n\n{model_mermaid_code}')
     
     with open(f'{dir_name}/graph.md', 'w') as f:
-        f.write(f'```mermaid\n{model_mermaid_code}\n\n{mermaid_code}\n```'.replace(r'\`', '`'))
+        f.write(f'```mermaid\n{mermaid_code}\n\n{model_mermaid_code}\n```'.replace(r'\`', '`'))
 
 
 # main function

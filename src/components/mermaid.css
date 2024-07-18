@@ -3,12 +3,8 @@
 .merm {
   font-family: sans-serif;
   text-align: center;
-  color: #ffffff;
-  margin-top: 20px;
-}
-
-body {
-  background: #fff;
+  padding: 2%;
+  background: linear-gradient(to bottom, #B1AFFF 0%, #BBE1FA 100%);
 }
 
 code {
