@@ -433,7 +433,6 @@ def add_file_entity(file_info):
         print("FileEntity already exists in the list.")
 
 
-
 def add_model_entity(name, fields):
     # Ensure that all items in fields are instances of FieldEntity
     if not all(isinstance(field, FieldEntity) for field in fields):
@@ -875,7 +874,7 @@ def generate_mermaid():
         function_called_entities = json.loads(f.read())
 
 
-    mermaid_code = ''
+    mermaid_code = 'classDiagram\n\ndirection LR\n'
 
     method_ref_name_dic = {}
 
@@ -979,7 +978,7 @@ def generate_mermaid():
             else:
                 already_invoked[from_method_name].append(to_method_name)
 
-    model_mermaid_code = 'classDiagram\n\ndirection LR\n'
+    model_mermaid_code = ''
     for model in model_entities:
         # if model_entities.index(model) == 2:
         #     break
@@ -1018,8 +1017,8 @@ def generate_mermaid():
     if not os.path.exists(dir_name):
         os.mkdir(dir_name)
 
-    with open(f'{dir_name}/graph.txt', 'w') as f:
-        f.write(f'{mermaid_code}\n\n{model_mermaid_code}')
+    with open(f'{dir_name}/graph.js', 'w') as f:
+        f.write(f'export default `\n{mermaid_code}\n\n{model_mermaid_code}\n`')
     
     with open(f'{dir_name}/graph.md', 'w') as f:
         f.write(f'```mermaid\n{mermaid_code}\n\n{model_mermaid_code}\n```'.replace(r'\`', '`'))
