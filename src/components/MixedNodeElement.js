@@ -1,9 +1,11 @@
 import React, { useState, useRef } from 'react';
 import { Space, Card } from 'antd';
 import { AiFillEnvironment } from "react-icons/ai";
+import ResponsiveCard from './Card';
+
 
 const CardComp = ({nodeData={}}) => (
-  <Space direction="vertical" size={16} style={{color: "white"}}>
+  // <Space direction="vertical" size={16} style={{color: "white"}}>
     <Card titleStyle={{ background: '#ff0000' , color: "white"}}
       hoverable
       title={<span style={{color: "white"}}>{nodeData.attributes.Type}</span>}
@@ -11,12 +13,13 @@ const CardComp = ({nodeData={}}) => (
       style={{
         height: 300,
         width: 400,
-        backgroundColor: '#7278ff',
+        backgroundColor: 'Blue',
         color: 'black',
-        overflow: 'auto',
-        zIndex: 1,
-        color: "white",
-        position: 'relative'
+        overflow: 'hidden',
+        color: "black",
+        position: 'relative',
+        display: 'inline-block',
+
       }}
     >
             <ul style={{ listStyleType: 'none', padding: 0 }}>
@@ -28,7 +31,6 @@ const CardComp = ({nodeData={}}) => (
                 ))}
             </ul>
     </Card>
-  </Space>
 );
 
 const MixedNodeElement = ({ nodeData = {}, triggerNodeToggle, foreignObjectProps = {} }) => {
@@ -43,10 +45,10 @@ const MixedNodeElement = ({ nodeData = {}, triggerNodeToggle, foreignObjectProps
   };
 
   const handleMouseLeave = () => {
-    // setIsHovering(false);
-    timerRef.current = setTimeout(() => {
-      setIsHovering(false);
-    }, 500);
+    setIsHovering(false);
+    // timerRef.current = setTimeout(() => {
+    //   setIsHovering(false);
+    // }, 5000);
   };
 
   return (
@@ -58,24 +60,17 @@ const MixedNodeElement = ({ nodeData = {}, triggerNodeToggle, foreignObjectProps
         onClick={triggerNodeToggle}
       >
       </circle> 
+      {/* {isHovering} ?<text style={{color: "#444"}}>{nodeData.name}</text> : <text style={{color: "#444"}}></text> */}
 
-
-      <foreignObject {...foreignObjectProps} style={{zIndex: 100}}>
-        <div
-            style={{
-              alignItems: 'center',
-              paddingBottom: '1rem',
-              width: '12vw',
-              zIndex: 122,
-              position: 'absolute'
-            }}
-          >
-            {/* <h6 style={{color: "#444", fontWeight: 500, fontSize:  "20px"}}>{nodeData.name}</h6> */}
-
-              {isHovering ? <CardComp nodeData={nodeData} />: <h6 style={{color: "#444", fontWeight: 500, fontSize:  "20px"}}>{nodeData.name}</h6>} 
+    
+      <foreignObject  width={400} height={600} x={+40} y={-50}>
+              {isHovering ? <CardComp nodeData={nodeData} />: <></>} 
               
-        </div>
+      </foreignObject>
 
+      <foreignObject width={400} height={500} x={-100} y={20} >
+            {/* <h6 style={{color: "#444", fontWeight: 500, fontSize:  "20px",display: "inline-block",width: "auto", backgroundColor: 'white' }}>{nodeData.name}</h6>               */}
+            <div style={{color: "#444", fontWeight: 500, fontSize:  "20px" }}>{nodeData.name}</div>              
       </foreignObject>
 
       

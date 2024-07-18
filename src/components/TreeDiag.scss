@@ -10,24 +10,28 @@
 }
 
 .demo-container {
-  position: fixed;
+  position: relative;
   display: flex;
   flex-direction: row;
   background-color: #5CBCFC;
   height: 100%;
-  width: 100%;
-  border-radius: 4%;
-
+  width: 100;
+  border-radius: 3%;
 }
 
 .column-left {
   width: 20%;
-  display: flex;
-  border-radius: 4%;
+  // display: flex;
+  position: fixed;
+  border-radius: 8px;
+  z-index: 2;
+  margin-left: 3%;
+  margin-top: 2%;
   // margin-left: 1%;
   flex-direction: column;
   background: #424242;
-  border-right: 1px solid #fff;
+  // border-right: 1px solid #fff;
+  border-top: 20px solid #D9D8D8;
 }
 
 .controls-container {
@@ -66,6 +70,7 @@
 }
 
 .column-right {
+  position: fixed;
   height: 100%;
   width: 100%;
 }
@@ -77,7 +82,7 @@
 
 .prop-container {
   padding: 8px 5px;
-  margin: 5px 10px;
+  margin: 5px 20px;
 }
 .button-combo{
   display: flex;
@@ -170,14 +175,14 @@ circle{
 
 /* Primary Button Specific Styling */
 .btn__primary {
-  background: var(--primary);
-  color: var(--greyLight-1);
+  // background: var(--primary);
+  // color: var(--greyLight-1);
   width: 8rem;
   height: 4.7rem;
-  box-shadow: inset .2rem .2rem 1rem var(--primary-light), 
-              inset -.2rem -.2rem 1rem var(--primary-dark),
-              .3rem .3rem .6rem var(--greyLight-2), 
-              -.2rem -.2rem .5rem var(--white);
+  // box-shadow: inset .2rem .2rem 1rem var(--primary-light), 
+  //             inset -.2rem -.2rem 1rem var(--primary-dark),
+  //             .3rem .3rem .6rem var(--greyLight-2), 
+  //             -.2rem -.2rem .5rem var(--white);
 }
 
 .btn__primary:hover {
@@ -202,6 +207,7 @@ circle{
 }
 
 .btn_tree {
+  fill: #7278ff;
   margin-right: 1rem; /* Space between buttons */
   height: 4rem; /* Matching height for all buttons */
 }

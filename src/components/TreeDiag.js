@@ -4,7 +4,6 @@ import Tree from 'react-d3-tree';
 import Switch from './Switch';
 import MixedNodeElement from './MixedNodeElement';
 import PureSvgNodeElement from './PureSvgNodeElement';
-import MixedNodeInputElement from './MixedNodeInputElement';
 import './TreeDiag.scss';
 import { IconName } from "react-icons/ai";
 import { AiOutlineZoomIn, AiOutlineZoomOut } from "react-icons/ai";
@@ -33,9 +32,9 @@ const customNodeFnMapping = {
         nodeData={nodeDatum}
         triggerNodeToggle={toggleNode}
         foreignObjectProps={{
-          width: appState.nodeSize.x,
-          height: appState.nodeSize.y,
-          x: -50,
+          width: 500,
+          height: 500,
+          x: 50,
           y: 20,
         }}
       />
@@ -68,7 +67,7 @@ class TreeDiag extends Component {
       orientation: 'horizontal',
       dimensions: undefined,
       centeringTransitionDuration: 600,
-      translateX: 100,
+      translateX: 300,
       translateY: 300,
       collapsible: true,
       shouldCollapseNeighborNodes: true,
@@ -78,8 +77,8 @@ class TreeDiag extends Component {
       draggable: true,
       zoom: 0.65,
       scaleExtent: { min: 0.1, max: 1 },
-      separation: { siblings: 0.7, nonSiblings: 1 },
-      nodeSize: { x: 400, y: 180 },
+      separation: { siblings: 0.5, nonSiblings: 1 },
+      nodeSize: { x: 500, y: 280 },
       enableLegacyTransitions: true,
       transitionDuration: 300,
       renderCustomNodeElement: customNodeFnMapping['mixed'].fn,
@@ -278,8 +277,7 @@ class TreeDiag extends Component {
   render() {
     return (
       <div className="reset-this">
-        <div className="demo-container">
-          <div className="column-left">
+                  <div className="column-left">
             <div className="controls-container">
               <div className="prop-container">
                 <h4 className="prop">Orientation</h4>
@@ -318,12 +316,10 @@ class TreeDiag extends Component {
 
               <div className='prop-container '>
                 <h4 className="prop">Adjust Zoom</h4>
-                <div className='button-combo'>
-                <div className='button-combo'>
-                <div className="btn btn__primary btn_tree" onClick={this.handleZoomIn}><p><AiOutlineZoomIn /></p></div>
-                <div className="btn btn__primary btn_tree" onClick={this.handleZoomOut}><p><AiOutlineZoomOut /></p></div>
-                </div>
 
+                <div className='button-combo'>
+                <div className="btn btn__primary btn_tree" onClick={this.handleZoomIn}><p><AiOutlineZoomIn style={{fontSize:'24px', marginTop:'2px'}}/></p></div>
+                <div className="btn btn__primary btn_tree" onClick={this.handleZoomOut}><p><AiOutlineZoomOut style={{fontSize:'24px', }}/></p></div>
                 </div>
               </div>
 
@@ -370,6 +366,8 @@ class TreeDiag extends Component {
             </div>
               </div>
           </div>
+        <div className="demo-container">
+
           <div className="column-right">
             <div className="tree-stats-container">
               Total nodes: {this.state.totalNodeCount}
