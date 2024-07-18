@@ -1,59 +1,193 @@
 ```mermaid
-
 classDiagram
 
 direction LR
-        class `Mermaid.js` {
+
+        class `MovieController.java` {
             Type: File
-            Contains: Class
-            Path: .../components/Mermaid.js
+            Contains: RestAPIController
+            Path: .../controller/MovieController.java
         }
 
-        class Mermaid{
+        class MovieController{
             Type: Class
-            FileName: Mermaid.js
+            FileName: MovieController.java
         }
 
-        `Mermaid.js` --|> Mermaid : Defines
+        `MovieController.java` --|> MovieController : Defines
         
-                Mermaid : componentDidMount() None
+                MovieController : helloWorld() None
                 
-                Mermaid : render() None
+                MovieController : addMovie(Movie) None
                 
-        class `MermaidComp.js` {
+                MovieController : getDirectorByMovieId(Long) None
+                
+        class `MovieService.java` {
             Type: File
-            Contains: Class
-            Path: .../components/MermaidComp.js
+            Contains: Service
+            Path: .../service/MovieService.java
         }
 
-        class MermaidComp{
-            Type: Class
-            FileName: MermaidComp.js
+        class MovieService{
+            Type: Interface
+            FileName: MovieService.java
         }
 
-        `MermaidComp.js` --|> MermaidComp : Defines
+        `MovieService.java` --|> MovieService : Defines
         
-                MermaidComp : MermaidComp() None
+                MovieService : addMovie(Movie) None
                 
-        class `MixedNodeElement.js` {
+                MovieService : getDirectorByMovieId(Long) None
+                
+                MovieService : findMovieById(Long) None
+                
+                MovieService : getAllMovies() None
+                
+                MovieService : deleteMovieById(Long) None
+                
+                MovieService : updateMovieById(Long, Movie) None
+                
+                MovieService : getActorsByMovieId(Long) None
+                
+                MovieService : addActor(Long, Actor) None
+                
+        class `FizzBuzz.java` {
             Type: File
-            Contains: Class
-            Path: .../components/MixedNodeElement.js
+            Contains: Service
+            Path: .../impl/FizzBuzz.java
         }
 
-        class MixedNodeElement{
+        class FizzBuzz{
             Type: Class
-            FileName: MixedNodeElement.js
+            FileName: FizzBuzz.java
         }
 
-        `MixedNodeElement.js` --|> MixedNodeElement : Defines
+        `FizzBuzz.java` --|> FizzBuzz : Defines
         
-                MixedNodeElement : MixedNodeElement(nodeData = {}, triggerNodeToggle, foreignObjectProps = {}) None
+                FizzBuzz : checkFizzBuzz(int) None
                 
-                MixedNodeElement : handleCircleHover(hovering) None
+        class `MovieServiceImpl.java` {
+            Type: File
+            Contains: Service
+            Path: .../impl/MovieServiceImpl.java
+        }
+
+                    class `MovieService` {
+                    }
+
+                    MovieServiceImpl ..|> `MovieService` : Implements
                 
-                MixedNodeElement : handleMouseLeave() None
+        class MovieServiceImpl{
+            Type: Class
+            FileName: MovieServiceImpl.java
+        }
+
+        `MovieServiceImpl.java` --|> MovieServiceImpl : Defines
+        
+                MovieServiceImpl : addMovie(com.movie.movie.entity.Movie) None
                 
+                MovieServiceImpl : getDirectorByMovieId(Long) None
+                
+                MovieServiceImpl : findMovieById(Long) None
+                
+                MovieServiceImpl : getActorsByMovieId(Long) None
+                
+                MovieServiceImpl : addActor(Long, com.movie.movie.entity.Actor) None
+                
+                MovieServiceImpl : getAllMovies() None
+                
+                MovieServiceImpl : deleteMovieById(Long) None
+                
+                MovieServiceImpl : updateMovieById(Long, com.movie.movie.entity.Movie) None
+                
+            MovieController --> MovieService : Invokes
+            
 
 
+        class `Actor.java` {
+            Type: File
+            Contains: Model/Entity/DTO
+            Path: .../entity/Actor.java
+        }
+
+        class Actor {
+            Type: Class
+            Fields: [
+
+Long id
+
+String name
+
+String biography
+
+Movie movie
+]
+        }
+
+        `Actor.java` --|> Actor : Defines
+        
+        class `Crew.java` {
+            Type: File
+            Contains: Model/Entity/DTO
+            Path: .../entity/Crew.java
+        }
+
+        class Crew {
+            Type: Class
+            Fields: [
+
+Long id
+
+String name
+
+String role
+]
+        }
+
+        `Crew.java` --|> Crew : Defines
+        
+        class `Director.java` {
+            Type: File
+            Contains: Model/Entity/DTO
+            Path: .../entity/Director.java
+        }
+
+        class Director {
+            Type: Class
+            Fields: [
+
+Long id
+
+String name
+
+String biography
+]
+        }
+
+        `Director.java` --|> Director : Defines
+        
+        class `Movie.java` {
+            Type: File
+            Contains: Model/Entity/DTO
+            Path: .../entity/Movie.java
+        }
+
+        class Movie {
+            Type: Class
+            Fields: [
+
+long Id
+
+String title
+
+int releaseYear
+
+String genre
+
+Director director
+]
+        }
+
+        `Movie.java` --|> Movie : Defines
+        
 ```

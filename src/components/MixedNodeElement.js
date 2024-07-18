@@ -59,7 +59,8 @@ const MixedNodeElement = ({ nodeData = {}, triggerNodeToggle, foreignObjectProps
         onMouseLeave={handleMouseLeave}
         onClick={triggerNodeToggle}
       >
-      </circle> 
+      </circle>
+
       {/* {isHovering} ?<text style={{color: "#444"}}>{nodeData.name}</text> : <text style={{color: "#444"}}></text> */}
 
     
