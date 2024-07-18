@@ -1,10 +1,10 @@
-import React from "react";
-import mermaid from "mermaid";
+import React from 'react';
+import mermaid from 'mermaid';
 
 mermaid.initialize({
   startOnLoad: true,
-  theme: "default",
-  securityLevel: "loose",
+  theme: 'default',
+  securityLevel: 'loose',
   themeCSS: `
     g.classGroup rect {
       fill: #282a36;
@@ -26,10 +26,61 @@ mermaid.initialize({
     .classLabel .label {
       fill: #f1fa8c;
     }
+
+    span.nodeLabel {
+		color: #EAEAEA;                      # all text colors
+		font-size: 14px;
+		font-weight: 400;
+	}
+
+	.classTitle .nodeLabel {
+		font-weight: 500;
+		font-size: 15px;
+		color: #F6995C;
+	}
+      
+    rect.outer.title-state {
+      fill: #31363F;                     # box background-color
+      border-color: white;                
+      stroke: #FF165D;                   # box border color
+	  }
+
+	rect.outer.title-state {
+		stroke-width: 2px;
+	}
+
+	.divider {
+        stroke: #FF165D;                   # innerLines color
+        box-shadow: 10px;
+    }
+
+	.divider {
+		stroke-width: 1px;
+    }
+	
+
+    rect {
+      rx: 5;                            # box radius
+    }
+
     .relation {
-      stroke: #ff79c6;
+      stroke: #FF165D;                     # arrow color
       stroke-width: 1;
     }
+	  
+    .edgeLabels .edgeLabel {
+      color: #000;                    # Label color
+      fill: black;
+      font-size: 16px;
+	  font-weight: 500;
+    }
+    span.edgeLabel > span.edgeLabel {
+       background-color: #51EAEA	;            # Label bg color
+	   display: block-inline;
+	   border-radius: 5px;
+	   padding: 10px 10px;
+    }
+
     #compositionStart, #compositionEnd {
       fill: #bd93f9;
       stroke: #bd93f9;
@@ -50,7 +101,7 @@ mermaid.initialize({
       stroke: #f8f8f2;
       stroke-width: 1;
     }`,
-  fontFamily: "Fira Code"
+  fontFamily: 'Fira Code',
 });
 
 export default class Mermaid extends React.Component {
