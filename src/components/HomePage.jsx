@@ -3,6 +3,7 @@ import './HomePage.scss'
 import { IoSend } from "react-icons/io5";
 import Loader from './Loader'
 import { useNavigate } from 'react-router-dom';
+import FormComponent from "./InputForm";
 
 class HomePage extends React.Component {
 constructor(props){
@@ -23,6 +24,9 @@ handleMouseMove(event) {
     this.setState({
         mouseX: event.pageX
     })
+}
+handleChange = (e) => {
+    this.setState({ inputString: e.target.value });
 }
 
 // Speed Mod Bar
@@ -86,17 +90,16 @@ componentWillUnmount() {
 }
 
 handleButtonClick(){
-    this.setState({ isLoading: true });
-    // fetch('https://api.example.com/data')
-    //     .then(response => response.json())
-    //     .then(() => {
-    //         this.setState({ isLoading: false });
-    //         console.log("Data fetched successfully");
-    //     })
-    //     .catch(error => {
-    //         this.setState({ isLoading: false });
-    //         console.error("Error fetching data: ", error);
-    //     })
+    // this.setState({ isLoading: true });
+    console.log(this.inputString)
+    fetch('https://localhost:8090/process-all/?dir_path=')
+        .then(response => response.json())
+        .then(() => {
+            console.log("Data fetched successfully");
+        })
+        .catch(error => {
+                console.error("Error fetching data: ", error);
+        })
 
     // navigate('/other-page');
 }
@@ -111,12 +114,7 @@ render() {
             {isLoading ? 
                 <Loader className="loader-top"/> 
                 : 
-                <div class="form">
-                    <input type="text" className="form__input" placeholder="Enter Github Repo or File Path......"/> 
-                    <div className="btn btn__primary" onClick={() => this.handleButtonClick()}>      
-                        <IoSend className="icon-arrow"/>
-                    </div>
-                </div>
+                <FormComponent/>
             }
             </div>
 
