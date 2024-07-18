@@ -321,7 +321,7 @@ class TreeDiag extends Component {
                 <div className='button-combo'>
                 <div className='button-combo'>
                 <div className="btn btn__primary btn_tree" onClick={this.handleZoomIn}><p><AiOutlineZoomIn /></p></div>
-                <div className="btn btn__primary btn_tree" onClick={this.handleZoomIn}><p><AiOutlineZoomOut /></p></div>
+                <div className="btn btn__primary btn_tree" onClick={this.handleZoomOut}><p><AiOutlineZoomOut /></p></div>
                 </div>
 
                 </div>
@@ -350,7 +350,7 @@ class TreeDiag extends Component {
               <div style={{display: 'flex'}}>
               <div className="prop-container">
                 <h4 className="prop">
-                  Center Nodes on Click
+                  Center Nodes 
                 </h4>
                 <Switch
                   name="centerNodesBtn"
@@ -360,7 +360,7 @@ class TreeDiag extends Component {
               </div>
 
               <div className="prop-container">
-                <h4 className="prop">Collapse neighbor nodes</h4>
+                <h4 className="prop">Collapse Neighbor</h4>
                 <Switch
                   name="collapseNeighborsBtn"
                   checked={this.state.shouldCollapseNeighborNodes}
