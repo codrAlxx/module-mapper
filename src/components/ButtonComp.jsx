@@ -1,6 +1,8 @@
 import React from 'react';
 import './BaseComp.scss';
 
+import './BaseComp.scss';
+
 class Button extends React.Component {
   constructor(props) {
     super(props);
