@@ -3,7 +3,7 @@ import uvicorn
 import PythonScript
 from fastapi.middleware.cors import CORSMiddleware
 
-origins = ["http://localhost:3000"]
+origins = ["http://localhost:3001"]
 
 app = fastapi.FastAPI()
 app.add_middleware(
