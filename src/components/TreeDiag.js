@@ -9,7 +9,7 @@ import { IconName } from 'react-icons/ai';
 import { AiOutlineZoomIn, AiOutlineZoomOut } from 'react-icons/ai';
 
 // Data examples
-import mapJson from '../examples/org-chart.json';
+import mapJson from '../auto-gen/antd_data.json';
 
 console.log('Demo React version: ', React.version);
 

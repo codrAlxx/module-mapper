@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Mermaid from './Mermaid';
-import example from '../examples/ExampleMermaid';
+// import example from '../examples/ExampleMermaid';
 import './mermaid.css';
-
+import example from '../auto-gen/mermaid_code/graph'
 function MermaidComp() {
   console.log(example);
   return (

@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { IoSend } from "react-icons/io5";
 import Loader from './Loader'
+import { useNavigate } from 'react-router-dom';
 
 
 const FormComponent = () => {
 const [inputValue, setInputValue] = useState('');
 const [isLoading, setIsLoading] = useState(false);
+const navigate = useNavigate();
 
 const handleInputChange = (e) => {
     setInputValue(e.target.value);
@@ -19,10 +21,12 @@ const handleButtonClick = () => {
     .then(() => {
         setIsLoading(false);
         console.log("Data fetched successfully");
+        navigate('/tree'); // Navigate to /tree path
     })
     .catch(error => {
         setIsLoading(false);
         console.error("Error fetching data: ", error);
+        navigate('/tree'); 
     });
 };
 
