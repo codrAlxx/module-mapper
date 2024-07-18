@@ -1,13 +1,25 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { IoSend } from 'react-icons/io5';
 import Loader from './Loader';
 import { useNavigate } from 'react-router-dom';
 import './HomePage.scss';
 
+const errorMessages = [
+  'Oops, Invalid link or path.',
+  "Uh oh, that link doesn't seem to be correct.",
+  'Whoops, wrong link! Try again.',
+  'Oops, wrong path! Please check your link.',
+];
+
+const getRandomErrorMessage = () => {
+  return errorMessages[Math.floor(Math.random() * errorMessages.length)];
+};
+
 const FormComponent = () => {
   const [inputValue, setInputValue] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleInputChange = e => {
     setInputValue(e.target.value);
@@ -21,6 +33,7 @@ const FormComponent = () => {
         response.json();
         setIsLoading(false);
         if (response.status === 400) {
+          setErrorMessage(getRandomErrorMessage());
         } else {
           console.log('Data fetched successfully');
           navigate('/tree');
@@ -54,6 +67,7 @@ const FormComponent = () => {
               <IoSend className="icon-arrow" />
             </div>
           </div>
+          <div class="error-msg">{errorMessage}</div>
         </div>
       )}
     </>
