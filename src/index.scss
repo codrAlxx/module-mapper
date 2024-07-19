@@ -7,7 +7,7 @@
   --primary-dark: #5b0eeb;
   
   --white: #FFFFFF;
-  --greyLight-1: #E4EBF5;
+  --greyLight-1: #EEEEEE;
   --greyLight-2: #c8d0e7;
   --greyLight-3: #bec8e4;
   --greyDark: #9baacf;
@@ -52,8 +52,8 @@ body {
   background: var(--greyLight-1);
 }
 .top-input{
- margin-top: 12%;
- margin-left: 28%;
+ margin-top: 8%;
+ margin-left: 0%;
 }
 .preloader{
   margin-left: 25%;
@@ -486,10 +486,10 @@ body {
   grid-row: 3 / 4;
 
   &__input {
-    margin-bottom: 40%;
+    // margin-bottom: 40%;
     margin-right: 12px;
     width: 42.4rem;
-    height: 5rem;
+    height: 100px;
     border: none;
     border-radius: 1rem;
     font-size: 1.4rem;
@@ -503,6 +503,10 @@ body {
     &:focus { outline: none; box-shadow: $shadow; }
   }
   
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*  SEARCH  */
@@ -746,6 +750,6 @@ body {
 }
 
 .form-error{
-  margin-top: 17%;
-  margin-left: 28%;
+  margin-top: 14%;
+  margin-left: 0%;
 }

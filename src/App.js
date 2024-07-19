@@ -11,6 +11,8 @@ const App = () => {
           <Route exact path="/" element={<HomePage />} />
           <Route path="/tree" element={<BaseComp />} />
           <Route path="/error" element={<Error />} />
+          <Route path="*" element={<Error />} />
+
         </Routes>
     </Router>
   );
